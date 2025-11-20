@@ -1,0 +1,32 @@
+.airline-list-box{
+    gap: 5px;
+    color: black;
+}
+.airline-list-box strong{
+    font-size: 16px;
+}
+.airline-list-box p{
+    font-size: 15px;
+}
+.airline-list-box img{
+    height: 250px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+@media screen and (max-width: 992px) {
+    .airline-list-box img{
+        height: 200px;
+    }
+    .airline-list-box strong{
+        font-size: 14px;
+    }
+    .airline-list-box p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .airline-list-box img{
+        height: 180px;
+    }
+}

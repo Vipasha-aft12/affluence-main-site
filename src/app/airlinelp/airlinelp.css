@@ -1,0 +1,31 @@
+.airline-listing-banner{
+  background-image: url('/airline-banner.webp'); 
+  background-position: center;
+  height: 350px;
+  margin-bottom: 40px;
+}
+.airline-listing-banner-col h1{
+    color: white;
+}
+.airline-listing-heading{
+    gap: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+.airline-listing-heading p{
+    font-size: 17px;
+}
+
+@media screen and (max-width: 992px) {
+    .airline-listing-banner{
+        height: 300px;
+        margin-bottom: 25px;
+    }
+    .airline-listing-heading{
+        gap: 10px;
+        text-align: center;
+    }
+    .airline-listing-heading p{
+        font-size: 15px;
+    }
+}
