@@ -1,0 +1,94 @@
+.hotellp-tophotel-box{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+}
+.hotellp-tophotel-box:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     border-radius: 10px;
+}
+.hotellp-tophotel-box-image{
+    position: relative;
+}
+.hotel-img{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.hotellptophotel-discount-badge{
+    position: absolute;
+    background: rgb(240, 29, 29);
+    border-radius: 50px;
+    font-size: 15px;
+    color: white;
+    padding: 5px 10px;
+    top: 10px;
+    right: 10px;
+}
+.hotellp-tophotel-box-content{
+    gap: 10px;
+    padding: 10px;
+    background: white;
+}
+.hotellp-tophotelrating, .hotellp-tophotellocation{
+    gap: 5px;
+    align-items: center !important;
+}
+.hotellp-tophotelrating img{
+    height: 20px;
+    width: auto;
+}
+.hotellp-tophotelrating p, .hotellp-tophotellocation p{
+    font-size: 15px;
+}
+.hotellp-tophotel-btn, .hotellp-tophotel-btn:hover{
+    border-radius: 10px;
+    background: #396bca !important;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+.hotellp-tophotelprice{
+    font-size: 15px;
+}
+.hotellp-tophotelprice s{
+    color: lightgray;
+    font-size: 16px;
+}
+.hotelprice{
+    color: #396bca;
+    font-size: 16px;
+}
+.pernight{
+    color: gray;
+}
+.hotellp-tophotelprice{
+    gap: 5px;
+}
+.hotellp-tophotelamenities{
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.hotellp-tophotelamenities p{
+    font-size: 14px;
+    border-radius: 5px;
+    background: #eaeff8;
+    padding: 3px 7px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .hotellptophotel-discount-badge{
+        font-size: 11px;
+    }
+    .hotellp-tophotelrating p, .hotellp-tophotellocation p{
+        font-size: 13px;
+    }
+    .hotellp-tophotelamenities p{
+        font-size: 12px;
+    }
+    .hotellp-tophotelname{
+        font-size: 17px !important;
+    }
+}

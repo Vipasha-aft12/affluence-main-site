@@ -1,0 +1,302 @@
+.search-engine {
+    background: white;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+
+.se-ul {
+    background-image: linear-gradient(to right, #001123, #396BCA, #001123);
+    padding: 10px 20px;
+    gap: 15px;
+    margin-top: -35px;
+}
+
+.se-li-btn {
+    display: flex !important;
+    gap: 5px;
+    color: white !important;
+}
+
+.search-engine .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background: white !important;
+    color: #001123 !important;
+}
+
+.se-b-icons {
+    display: none;
+}
+
+.se-li-btn.active .se-b-icons {
+    display: flex !important;
+}
+
+.se-li-btn.active .se-icons {
+    display: none !important;
+}
+
+.search-engine-flightcontainer-nav-tab {
+    border: none;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.nav-tabs .nav-link {
+    color: black !important;
+    border: none !important;
+    font-size: 14px !important;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    background: #396BCA !important;
+}
+
+.se-box label {
+    display: none;
+}
+
+.search-engine-box {
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 5px 15px;
+}
+
+.se-input-box {
+    gap: 5px;
+}
+
+.se-input-box input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.se-input-box input::placeholder {
+    color: black;
+    font-size: 14px;
+}
+
+.flights .se-box {
+    width: 15%;
+}
+
+.se-btn,
+.se-btn:hover {
+    background: #396BCA;
+    width: 15%;
+    color: white;
+    font-weight: 500;
+    height: 45px;
+}
+
+.mob-multicity-btn {
+    display: none;
+}
+
+.multicity-searchbox .se-box {
+    width: 18%;
+}
+
+.multicity-searchbox .se-btn {
+    width: 18%;
+}
+
+.se-btn-multicity {
+    border: 1px solid #396BCA;
+    color: #396BCA;
+    width: 18%;
+    height: 45px;
+}
+
+.se-box {
+    border-left: 1px solid lightgray;
+    padding-left: 10px;
+    height: 45px;
+    justify-content: center !important;
+}
+
+.no-left-border {
+    border-left: 0px solid lightgray;
+}
+
+.hotel-searchbox .se-box,
+.car-searchbox .se-box {
+    width: 18%;
+}
+
+.hotel-searchbox .se-btn,
+.car-searchbox .se-box {
+    width: 18%;
+}
+
+.package-searchbox .se-box,
+.package-searchbox .se-btn {
+    width: 23%;
+}
+.traveller-box{
+    position: relative;
+}
+.traveller-box:hover .traveller-box-subbox{
+    display: flex;
+}
+.traveller-box-subbox{
+    position: absolute;
+    top: 30px;
+    border: 1px solid lightgray;
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    z-index: 2;
+    padding: 10px;
+    gap: 10px;
+    display: none;
+}
+.traveller-category{
+    padding: 5px 10px;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.traveller-category-name strong{
+    font-size: 14px;
+}
+.traveller-category-name p{
+    font-size: 11px;
+}
+.traveller-category-add{
+    gap: 10px;
+}
+.trav-cat-add-sub{
+    height: 30px;
+    width: 30px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+}
+.trav-cat-add-sub p{
+    font-size: 20px;
+    margin-bottom: 5px !important;
+}
+.traveller-category-add span{
+    font-weight: 700;
+}
+.travller-disclaimer{
+    font-size: 11px;
+}
+.trav-class-done-btn, .trav-class-done-btn:hover{
+    background: #396BCA;
+    color: white;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 1200px) {
+    .flights .se-box {
+        width: 30%;
+    }
+    .se-btn{
+        width: 30%;
+    }
+    .multicity-searchbox .se-box {
+    width: 19%;
+}
+
+.multicity-searchbox .se-btn, .se-btn-multicity {
+    width: 19%;
+}
+
+.car-searchbox .se-btn {
+    width: 18%;
+}
+}
+
+@media screen and (max-width: 992px) {
+    .se-li-btn p{
+        font-size: 14px;
+    }
+    .se-li-btn img{
+        height: 20px;
+        width: auto;
+    }
+    .se-li{
+        width: 14%;
+    }
+    .se-btn-multicity{
+        width: 25%;
+    }
+    .hotel-searchbox .se-box, .car-searchbox .se-box, .hotel-searchbox .se-btn, .car-searchbox .se-box{
+        width: 48%;
+    }
+    .hotel-searchbox .se-btn, .car-searchbox .se-btn{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .se-ul{
+        padding: 10px;
+    }
+    .se-li-btn{
+        flex-direction: column;
+    }
+    .nav-tabs .nav-link{
+        font-size: 12px !important;
+    }
+    .flights .se-box{
+        width: 48%;
+    }
+    .flights .se-btn{
+        width: 100%;
+    }
+    .se-btn-multicity{
+        width: 100%;
+    }
+    .package-searchbox .se-box{
+        width: 48%;
+    }
+    .package-searchbox .se-btn{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .se-li-btn p{
+        font-size: 12px;
+    }
+    .se-ul{
+        gap: 5px;
+        justify-content: space-between !important;
+    }
+    .se-box label{
+        display: flex;
+        font-size: 13px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .se-box{
+        border-left: 0px;
+        margin-bottom: 20px  ;
+    }
+    .se-input-box{
+        border: 1px solid lightgray;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+        align-items: center !important;
+    }
+    .mw-full{
+        width: 100% !important;
+    }
+    .mw-half{
+        width: 48%;
+    }
+    .se-input-box input{
+        width: 99%;
+    }
+    .search-engine-box{
+        gap: 25px 0px;
+        padding: 20px 10px 0px 10px;
+    }
+    .se-box-icon{
+        height: 20px;
+        width: auto;
+    }
+}

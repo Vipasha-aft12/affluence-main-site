@@ -1,0 +1,33 @@
+.why-book-hotel-box{
+    gap: 10px;
+}
+.why-book-hotel-image img{
+    height: 50px;
+    width: auto;
+    z-index: 1 !important;
+}
+.why-book-hotel-image{
+    height: auto;
+    width: auto;
+    border-radius: 50%;
+    background: #aebcd6;
+    padding: 15px;
+}
+.why-book-hotel-content{
+    gap: 5px;
+}
+.why-book-hotel-content p{
+    font-size: 15px;
+}
+.why-book-hotel-content strong{
+    font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+    .why-book-hotel-image img{
+        height: 35px;
+    }
+    .why-book-hotel-content p{
+        font-size: 13px;
+    }
+}

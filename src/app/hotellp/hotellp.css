@@ -1,0 +1,129 @@
+.hotel-lp-banner{
+    background: #396BCA;
+}
+.hotel_landingpage .row{
+    margin: auto;
+}
+
+.why-book-hotel-heading h2, .hotellp-top-hotels-heading h2, .hotellp-explore_hotel_type-heading h2, .hotellp-faq-heading h2{
+    margin-bottom: 15px !important;
+}
+.why-book-hotel-heading p, .hotellp-top-hotels-heading p, .hotellp-explore_hotel_type-heading p, .hotellp-expert_tips-box p, .hotellp-faq-heading p, .hotellp-booking-guide-colone p, .hotellp-booking-guide-coltwo-box p, .hotellp-booking-guide-coltwo-box  li{
+    font-size: 15px;
+}
+.why-book-hotel, .hlp-international-hotels, .hotellp-mid, .hotellp-booking-guide{
+    padding: 50px 0px;
+}
+
+.why-book-hotel{
+    background: #dfe4ec;
+    text-align: center;
+}
+.hlp-international-hotels{
+    background: #edf0f5;
+}
+
+.hotellp-top-hotels-heading{
+    text-align: left !important;
+}
+.hotellp-top-hotels-heading p, .hotellp-explore_hotel_type-heading p, .hotellp-faq-heading p{
+    color: gray;
+    font-weight: 500;
+}
+
+
+.hotellp-explore_hotel_type-heading, .hotellp-faq-heading{
+    text-align: center;
+}
+.hotellp-expert_tips-box{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 20px;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+     gap: 10px;
+}
+.hotellp-expert_tips-box strong{
+    font-size: 17px;
+    margin-bottom: 10px !important;
+   
+}
+.hotellp-mid{
+    background: #396BCA;
+}
+.hotellp-mid-col{
+    gap: 15px;
+    color: white;
+    text-align: center;
+}
+.hotellp-mid-col p{
+    font-size: 16px;
+    font-weight: 500;
+}
+.hotellp-mid-col strong{
+    font-size: 22px;
+}
+.hotellp-mid-btn, .hotellp-mid-btn:hover{
+    background: white;
+    font-weight: 500;
+    color: black;
+}
+
+.hotellp-booking-guide{
+    background: #d3dff7;
+}
+.hotellp-booking-guide-colone {
+    gap: 10px;
+}
+
+.hotellp-booking-guide-coltwo{
+    gap: 15px;
+}
+.hotellp-booking-guide-coltwo-box{
+    padding: 15px;
+    gap: 15px 0px;
+    flex-wrap: wrap;
+    background: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.hotellp-booking-guide-coltwo-subbox {
+    width: 48%;
+    gap: 5px;
+    align-items: flex-start !important;
+}
+.hotellp-booking-guide-coltwo-subbox-content{
+    width: 85%;
+}
+.hotellp-booking-icon{
+    height: 30px;
+    width: auto;
+}
+
+.hotel-lp-banner-searchcol{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .why-book-hotel, .hlp-international-hotels, .hotellp-mid, .hotellp-booking-guide{
+        padding: 25px 0px;
+    }
+    .why-book-hotel-heading h2, .hotellp-top-hotels-heading h2, .hotellp-explore_hotel_type-heading h2, .hotellp-faq-heading h2{
+        margin-bottom: 10px !important;
+    }
+    .why-book-hotel-heading p, .hotellp-top-hotels-heading p, .hotellp-explore_hotel_type-heading p, .hotellp-expert_tips-box p, .hotellp-faq-heading p, .hotellp-booking-guide-colone p, .hotellp-booking-guide-coltwo-box p, .hotellp-booking-guide-coltwo-box li{
+        font-size: 13px;
+    }
+    .hotellp-mid-col strong{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .hotellp-booking-guide-coltwo-subbox{
+        width: 100%;
+    }
+    .hotellp-mid-btn, .hotellp-mid-btn:hover{
+        font-size: 13px;
+    }
+}

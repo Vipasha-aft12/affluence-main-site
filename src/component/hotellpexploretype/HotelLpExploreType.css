@@ -1,0 +1,59 @@
+.hotellp-explore_hotel_type-box {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+}
+
+.hotellp-explore_hotel_type-box:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.hotellp-explore_hotel_type-box-image{
+    position: relative;
+    width: 100%;
+}
+.explore-hotel-img{
+    height: 220px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100% !important;
+}
+.hotellp-explore_hotel_type-box-image-icon{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    align-items: center;
+    gap: 10px;
+}
+.hotellp-explore_hotel_type-box-image-icon p{
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+.explore-hotel-icon{
+    height: 45px;
+    width: auto;
+}
+.hotellp-explore_hotel_type-box-content{
+    gap: 10px;
+    padding: 10px;
+}
+.hotellp-explore_hotel_type-box-content li, .hotellp-explore_hotel_type-box-content li p{
+    font-size: 15px;
+    color: gray;
+}
+.hotellp-explore_hotel_type-box-content-button, .hotellp-explore_hotel_type-box-content-button:hover{
+    border: 1px solid lightgray !important;
+    border-radius: 10px;
+}
+.hotellp-explore_hotel_type-box-content-button a{
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 767px) {
+    .hotellp-explore_hotel_type-box-content li, .hotellp-explore_hotel_type-box-content p, .hotellp-explore_hotel_type-box-content-button a{
+        font-size: 13px;
+    }
+}
