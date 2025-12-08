@@ -523,6 +523,11 @@ h6 {
 @media screen and (max-width: 992px) {
 
     /*-------------------package page-----*/
+    .pkg_landingp_destination-col{
+        flex-wrap: wrap;
+        justify-content: center !important;
+        gap: 15px;
+    }
     .pkg_landingp-pkg-choice-box-content p,
     .pkg_landingp-pkg-choice-box-sub-content a,
     .pkg_landingp-benefits-box p,
