@@ -1,0 +1,19 @@
+.flight-booking-baggage h6{
+    font-weight: 700;
+}
+.flight-booking-baggage-col{
+    text-align: center;
+    gap: 6px;
+}
+.flight-booking-baggage-col p{
+    font-size: 15px;
+}
+.flight-booking-baggage-col strong{
+    color: #396bca;
+}
+
+@media screen and (max-width: 768px) {
+    .flight-booking-baggage-col p{
+        font-size: 13px;
+    }
+}

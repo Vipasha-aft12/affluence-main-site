@@ -1,0 +1,26 @@
+.flight-booking-travel-protection-colone p, .flight-booking-travel-protection-colone li{
+    font-size: 15px;
+    margin-bottom: 10px !important;
+}
+.flight-booking-travel-protection-colone-ol{
+    flex-wrap: wrap;
+}
+.flight-booking-travel-protection-colone-ol li{
+    width: 48%;
+    font-weight: 500;
+}
+@media screen and (max-width: 767px) {
+    .flight-booking-travel-protection-coltwo{
+        display: none;
+    }
+    .flight-booking-travel-protection-colone p, .flight-booking-travel-protection-colone li{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .flight-booking-travel-protection-colone-ol li{
+        width: 100%;
+    }
+}
+

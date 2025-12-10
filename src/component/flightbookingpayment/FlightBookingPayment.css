@@ -1,0 +1,40 @@
+.flight-booking-payment-colone p{
+    font-size: 15px;
+}
+.flight-booking-payment-coltwo label{
+    font-size: 14px;
+}
+.flight-booking-payment-colthree{
+    border-top: 1px solid black;
+    padding-top: 10px;
+}
+.flight-booking-payment-back-btn{
+    border: 1px solid lightgray !important;
+    padding: 5px 15px !important;
+    font-size: 15px !important;
+    font-weight: 500;
+}
+.flight-booking-payment-amt-btn{
+    gap: 10px;
+}
+.flight-booking-payment-amt-btn p{
+    font-size: 15px;
+    font-weight: 700;
+}
+.flight-booking-payment-paynow-btn, .flight-booking-payment-paynow-btn:hover{
+    background: #396bca !important;
+    color: white;
+    font-size: 15px;
+}
+
+@media screen and (max-width:768px) {
+    .flight-booking-payment-colone p, .flight-booking-payment-amt-btn p{
+        font-size: 13px;
+    }
+    .flight-booking-payment-coltwo label{
+        font-size: 12px;
+    }
+    .flight-booking-payment-paynow-btn, .flight-booking-payment-paynow-btn:hover,.flight-booking-payment-back-btn{
+        font-size: 13px !important;
+    }
+}

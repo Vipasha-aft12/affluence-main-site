@@ -1,0 +1,58 @@
+.flight-booking .row {
+    margin: auto;
+}
+
+.flight-booking-commonbox {
+    gap: 10px;
+}
+
+.flight-booking-commonbox {
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.flight-booking-commonbox-heading {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: rgb(213, 234, 247);
+    color: #396BCA;
+    padding: 5px 10px;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.flight-booking-commonbox-heading-bottom {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #396BCA;
+    padding: 5px 10px;
+}
+
+.flight-booking-commonbox-heading-bottom,
+.flight-booking-commonbox-heading-bottom a {
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.fbcommon-row-padding {
+    gap: 15px 0px;
+    padding: 10px 15px;
+}
+
+.flight-booking-traveler-detail-type {
+    padding: 10px;
+    gap: 5px;
+}
+
+.flight-booking-traveler-detail-type p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:768px) {
+    .fbcommon-row-padding {
+        gap: 15px 0;
+        padding: 10px 10px;
+    }
+}

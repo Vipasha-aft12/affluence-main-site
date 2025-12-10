@@ -1,0 +1,22 @@
+.flight-booking-policy-colfive{
+    gap: 10px;
+    margin-top: 15px;
+}
+.flight-booking-policy-colfive p{
+    font-size: 13px;
+    font-weight: 500;
+    color: gray;
+}
+.flight-booking-policy-colfive strong{
+    color: black;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .flight-booking-policy-colfive strong, .flight-booking-policy-colone p{
+        font-size: 13px;
+    }
+    .flight-booking-policy-colfive p{
+        font-size: 12px;
+    }
+}

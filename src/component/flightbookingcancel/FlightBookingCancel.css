@@ -1,0 +1,15 @@
+.flight-booking-cancel-col{
+    gap: 10px;
+}
+.flight-booking-cancel-col p{
+    font-size: 15px;
+}
+.flight-booking-cancel-col span, .flight-booking-cancel-col strong{
+    color: #396bca;
+}
+
+@media screen and (max-width: 768px) {
+    .flight-booking-cancel-col  p{
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,23 @@
+.flight-booking-contact-detail-col{
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.flight-booking-contact-detail-col label{
+    font-size: 15px;
+    font-weight: 600;
+}
+.flight-booking-contact-detail-col input::placeholder{
+    font-size: 14px;
+}
+.flight-booking-contact-detail-col .form-select{
+    font-size: 14px !important;
+}
+
+@media screen and (max-width: 767px) {
+    .flight-booking-contact-detail-col label, .flight-booking-traveler-detail-type p{
+        font-size: 13px;
+    }
+    .flight-booking-contact-detail-col .form-select, .flight-booking-contact-detail-col input::placeholder{
+        font-size: 12px;
+    }
+}
