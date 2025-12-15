@@ -2,19 +2,18 @@
 import { useState } from "react";
 import Image from "next/image";
 import './hotellisting.css';
+import SearchEngineHotel from "@/component/searchengine/SearchEngineHotel";
 
 export default function Page() {
-  // -----------------------------
-  // FILTER STATES
-  // -----------------------------
+  //filter
   const [sortBy, setSortBy] = useState("recommended");
   const [priceRange, setPriceRange] = useState([0, 1000]);
   const [minRating, setMinRating] = useState("any");
   const [amenities, setAmenities] = useState([]);
-  
-  // -----------------------------
-  // HOTEL DATA (DYNAMIC)
-  // -----------------------------
+
+
+  // hotel data
+
   const hotels = [
     {
       id: 1,
@@ -26,7 +25,8 @@ export default function Page() {
       reviews: 3456,
       amenities: ["Spa", "Fine Dining", "Infinity Pool"],
       tags: ["Burj Khalifa View", "Luxury Hotel"],
-      image: "/hotel1.jpg", 
+      image: "/images/hotel/hotellisting/hotel-image-1.webp",
+      description: "Iconic resort on Palm Jumeirah with world-class amenities and Arabian Gulf views.",
     },
     {
       id: 2,
@@ -38,23 +38,24 @@ export default function Page() {
       reviews: 2890,
       amenities: ["Multiple Pools", "Spa", "Private Beach"],
       tags: ["Beach Villa", "Resort"],
-      image: "/hotel2.jpg",
-      offer: "24% OFF"
+      image: "/images/hotel/hotellisting/hotel-image-2.webp",
+      offer: "24% OFF",
+      description: "Iconic resort on Palm Jumeirah with world-class amenities and Arabian Gulf views."
     },
   ];
 
-  // -----------------------------
-  // HANDLE AMENITIES
-  // -----------------------------
+
+  // amenities
+
   const toggleAmenity = (amenity) => {
     setAmenities((prev) =>
       prev.includes(amenity) ? prev.filter(a => a !== amenity) : [...prev, amenity]
     );
   };
 
-  // -----------------------------
-  // RESET ALL FILTERS
-  // -----------------------------
+
+  // filter resetting
+
   const resetFilters = () => {
     setSortBy("recommended");
     setPriceRange([0, 1000]);
@@ -63,156 +64,221 @@ export default function Page() {
   };
 
   return (
-    <div className="container py-4">
-      <div className="row">
-        
-        {/* ------------------ FILTER SIDEBAR ------------------ */}
-        <div className="col-lg-3 col-md-4 mb-4 border rounded p-3">
+    <section className="hotel-listing-page">
 
-          <h5 className="mb-3">Sort By</h5>
-          <select className="form-select mb-3" 
-            value={sortBy} 
-            onChange={(e) => setSortBy(e.target.value)}
-          >
-            <option value="recommended">Recommended</option>
-            <option value="rating">Highest Rating</option>
-            <option value="priceLowHigh">Price: Low to High</option>
-            <option value="priceHighLow">Price: High to Low</option>
-          </select>
+      <section className="hotel-listing-breadcrumb bdr-top">
+        <div className="container hotel-listing-breadcrumb-container">
+          <div className="row hotel-listing-breadcrumb-row">
+            <div className="col-12 hotel-listing-breadcrumb-col">
+              <nav
+                style={{ "--bs-breadcrumb-divider": "'>'" }}
+                aria-label="breadcrumb"
+              >
+                <ol className="breadcrumb p-0 mb-0 start fd-row">
+                  <li className="breadcrumb-item"><a href="#">Home</a></li>
+                  <li className="breadcrumb-item"><a href="#">Hotels</a></li>
+                  <li className="breadcrumb-item active" aria-current="page">Dubai Search Results</li>
+                </ol>
+              </nav>
 
-          <hr />
-
-          {/* PRICE RANGE */}
-          <h5 className="mb-3">Price Range</h5>
-          <input
-            type="range"
-            className="form-range"
-            min="0"
-            max="1000"
-            value={priceRange[1]}
-            onChange={(e) => setPriceRange([0, e.target.value])}
-          />
-          <div className="d-flex justify-content-between">
-            <span>${priceRange[0]}</span>
-            <span>${priceRange[1]}</span>
-          </div>
-
-          <hr />
-
-          {/* RATING FILTER */}
-          <h5 className="mb-3">Minimum Rating</h5>
-          {["4.5", "4", "3.5", "3"].map((rate) => (
-            <div key={rate} className="form-check mb-1">
-              <input
-                type="radio"
-                className="form-check-input"
-                name="rating"
-                value={rate}
-                checked={minRating === rate}
-                onChange={() => setMinRating(rate)}
-              />
-              <label className="form-check-label">⭐ {rate}+</label>
             </div>
-          ))}
-          <div className="form-check">
-            <input
-              type="radio"
-              className="form-check-input"
-              name="rating"
-              value="any"
-              checked={minRating === "any"}
-              onChange={() => setMinRating("any")}
-            />
-            <label className="form-check-label">Any Rating</label>
-          </div>
-
-          <hr />
-
-          {/* AMENITIES */}
-          <h5 className="mb-2">Amenities</h5>
-          {["WiFi", "Pool", "Spa", "Restaurant", "Gym", "Parking", "Breakfast"].map((item) => (
-            <div key={item} className="form-check mb-1">
-              <input
-                type="checkbox"
-                className="form-check-input"
-                checked={amenities.includes(item)}
-                onChange={() => toggleAmenity(item)}
-              />
-              <label className="form-check-label">{item}</label>
-            </div>
-          ))}
-
-          {/* RESET BUTTON */}
-          <div className="mt-4">
-            <button 
-              className="btn btn-outline-danger w-100"
-              onClick={resetFilters}
-            >
-              Reset Filters
-            </button>
           </div>
         </div>
+      </section>
 
-        {/* ------------------ HOTEL LIST SECTION ------------------ */}
-        <div className="col-lg-9 col-md-8">
-          {hotels.map((hotel) => (
-            <div key={hotel.id} className="card mb-4 shadow-sm p-3">
+      <section className="hotel-listing-properties bdr-top bdr-btm">
+        <div className="container hotel-listing-properties-container">
+          <div className="row hotel-listing-properties-row">
+            <div className="col-12 hotel-listing-properties-col start fd-col">
+              <p><strong>Hotels in Dubai</strong></p>
+              <p><span>2 properties found</span> | <span>2 Guests</span></p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-              <div className="row g-0">
-                <div className="col-md-4 position-relative">
-                  {hotel.offer && (
-                    <span className="badge bg-danger position-absolute m-2">
-                      {hotel.offer}
-                    </span>
-                  )}
-                  <Image
-                    src={hotel.image}
-                    width={400}
-                    height={260}
-                    className="rounded img-fluid"
-                    alt={hotel.name}
-                  />
-                </div>
+      <section className="hotellistng-search sticky-top">
+        <div className="container hotellistng-search-container">
+          <div className="row hotellistng-search-row">
+            <div className="col-12 hotellistng-search-col">
+              <SearchEngineHotel />
+            </div>
+          </div>
+        </div>
+      </section>
 
-                <div className="col-md-8 ps-3 d-flex flex-column justify-content-between">
-                  
-                  <div>
-                    <h4 className="mb-1">{hotel.name}</h4>
-                    <p className="text-muted mb-1">{hotel.location}</p>
+      <section className="hotel-listing-main">
+        <div className="container">
+          <div className="row common-gap">
 
-                    <p className="mb-2">{hotel.tags.join(" • ")}</p>
+            {/* ------------------ FILTER SIDEBAR ------------------ */}
+            <div className="col-lg-3 col-md-4 hotel-listing-filter start fd-col">
 
-                    <div className="mb-2">
-                      {hotel.amenities.map((a, index) => (
-                        <span key={index} className="badge bg-light text-dark me-1">
-                          {a}
-                        </span>
-                      ))}
-                    </div>
-
-                    <p className="text-muted">{hotel.reviews} reviews</p>
-                  </div>
-
-                  <div className="d-flex justify-content-between align-items-center">
-                    <div>
-                      <span className="text-decoration-line-through text-muted">
-                        ${hotel.oldPrice}
-                      </span>
-                      <h4 className="text-success">${hotel.newPrice}/night</h4>
-                      <p className="text-success small">✓ Free cancellation</p>
-                    </div>
-
-                    <button className="btn btn-primary">View Details</button>
-                  </div>
-
-                </div>
+              <h5 className="hotel-listing-filter-heading">Filter</h5>
+              <div className="bdr-btm w-100 pb-4">
+                <select className="form-select hotel-listing-filter-sortby"
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value)}
+                >
+                  <option value="recommended">Recommended</option>
+                  <option value="rating">Highest Rating</option>
+                  <option value="priceLowHigh">Price: Low to High</option>
+                  <option value="priceHighLow">Price: High to Low</option>
+                </select>
               </div>
 
-            </div>
-          ))}
-        </div>
 
-      </div>
-    </div>
+
+
+              {/* PRICE RANGE */}
+              <h5 className="hotel-listing-filter-heading">Price Range</h5>
+              <input
+                type="range"
+                className="form-range"
+                min="0"
+                max="1000"
+                value={priceRange[1]}
+                onChange={(e) => setPriceRange([0, e.target.value])}
+              />
+              <div className="hotel-listing-filter-range w-100 btwn fd-row bdr-btm pb-4">
+                <span>${priceRange[0]}</span>
+                <span>${priceRange[1]}</span>
+              </div>
+
+
+              {/* RATING FILTER */}
+              <h5 className="hotel-listing-filter-heading">Minimum Rating</h5>
+              {["4.5", "4", "3.5", "3"].map((rate) => (
+                <div key={rate} className="form-check hotel-listing-filter-rate">
+                  <input
+                    type="radio"
+                    className="form-check-input"
+                    name="rating"
+                    value={rate}
+                    checked={minRating === rate}
+                    onChange={() => setMinRating(rate)}
+                  />
+                  <label className="form-check-label">⭐ {rate}+</label>
+                </div>
+              ))}
+              <div className="form-check hotel-listing-filter-radio bdr-btm w-100 pb-4">
+                <input
+                  type="radio"
+                  className="form-check-input"
+                  name="rating"
+                  value="any"
+                  checked={minRating === "any"}
+                  onChange={() => setMinRating("any")}
+                />
+                <label className="form-check-label hotel-listing-filter-radio-label">Any Rating</label>
+              </div>
+
+              {/* AMENITIES */}
+              <h5 className="hotel-listing-filter-heading">Amenities</h5>
+              {["WiFi", "Pool", "Spa", "Restaurant", "Gym", "Parking", "Breakfast"].map((item) => (
+                <div key={item} className="form-check hotel-listing-filter-anenities">
+                  <input
+                    type="checkbox"
+                    className="form-check-input"
+                    checked={amenities.includes(item)}
+                    onChange={() => toggleAmenity(item)}
+                  />
+                  <label className="form-check-label">{item}</label>
+                </div>
+              ))}
+
+              {/* RESET BUTTON */}
+              <div className="hotel-listing-filter-reset w-100">
+                <button
+                  className="btn btn-outline-secondary w-100"
+                  onClick={resetFilters}
+                >
+                  Reset Filters
+                </button>
+              </div>
+            </div>
+
+            {/* ------------------ HOTEL LIST SECTION ------------------ */}
+            <div className="col-lg-9 col-md-8 hotel-listing-col start fd-col common-gap">
+              {hotels.map((hotel) => (
+                <div key={hotel.id} className="hotel-listing-col-card w-100">
+
+                  <div className="row hotel-listing-box start fd-row">
+                    <div className="col-lg-4 hotel-listing-box-image ps-0">
+                      {hotel.offer && (
+                        <span className="hotel-listing-box-discount">
+                          {hotel.offer}
+                        </span>
+                      )}
+                      <Image
+                        src={hotel.image}
+                        width={300}
+                        height={200}
+                        className="img-fluid hotel-listing-box-image"
+                        alt={hotel.name}
+                      />
+                    </div>
+
+                    <div className="col-lg-8 hotel-listing-box-content start fd-col">
+
+                      <div className="hotel-listing-box-hotelname start fd-col bdr-btm w-100">
+                        <div className="w-100 btwn fd-row">
+                          <h4 className="hotel-listing-box-hotelname-heading">{hotel.name}</h4>
+                          <div className="hotel-listing-rating-star cent fd-row">
+                            <Image
+                              src="/images/hotel/hotellisting/star.webp"
+                              className="img-fluid"
+                              width={24}
+                              height={24}
+                              alt="hotel listing star" />
+                            <p>{hotel.rating}</p>
+                          </div>
+                        </div>
+                        <div className="hotel-listing-location start fd-row">
+                          <Image
+                            src="/images/hotel/hotellisting/location.webp"
+                            className="img-fluid"
+                            width={24}
+                            height={24}
+                            alt="hotel listing location" />
+                          <p className="hotel-listing-box-hotelname-city">{hotel.location}</p>
+                        </div>
+
+                        <p className="hotel-listing-box-hotelname-tag">{hotel.tags.join(" • ")}</p>
+                        <p>{hotel.description}</p>
+                        <div className="hotel-listing-box-amenities w-100 start fd-row">
+                          {hotel.amenities.map((a, index) => (
+                            <span key={index} className="bg-light hotel-listing-box-amenities-span">
+                              {a}
+                            </span>
+                          ))}
+                        </div>
+
+                        <p className="hotel-listing-box-hotelname-review">{hotel.reviews} reviews</p>
+                      </div>
+
+                      <div className="hotel-listing-box-bottom w-100 btwn fd-row">
+                        <div className="hotel-listing-box-prices start fd-col">
+                          <s className="text-decoration-line-through text-muted">
+                            ${hotel.oldPrice}
+                          </s>
+                          <h5 className="text-success">${hotel.newPrice}<span>/night</span></h5>
+                          <p className="text-success small">✓ Free cancellation</p>
+                        </div>
+
+                        <button className="hotel-listing-box-hotelname-btn btn cent">View Details</button>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              ))}
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </section>
   );
 }
