@@ -49,6 +49,9 @@
     font-size: 15px;
     font-weight: 500;
 }
+.flight-booking-traveler-detail .accordion-flush, .flight-booking-traveler-detail .accordion-item, .flight-booking-traveler-detail .accordion-header,.flight-booking-traveler-detail .accordion-button{
+    border-radius: 10px !important;
+}
 
 @media screen and (max-width:768px) {
     .fbcommon-row-padding {
