@@ -26,12 +26,57 @@ const PackageDetail = () => {
                 <p>Hotels, Flights and Car Rentals - All in One Package</p>
               </div>
               <div className="col-12 pkg-holidaylisting-col cent">
-                <div className="pkg-holidaylisting-col-box btwn fd-row">
-                  <div className="pkg-holidaylisting-col-box-input start fd-row">
-                    <img src="images/hotel-listing-image/search-iconnn.webp" className="img-fluid" alt />
-                    <input type="text" placeholder="Enter Your Dream Destinations" />
+                <div className="row pkg-holidaylisting-col-box btwn fd-row w-100">
+                  <div className="col-lg-3 col-md-4 pkg-holidaylisting-col-box-input-col start fd-col">
+                    <label>Destination</label>
+                    <div className='pkg-holidaylisting-col-box-input start fd-row'>
+                      <Image
+                        src='/images/search-engine/search.webp'
+                        className='img-fluid'
+                        width={24}
+                        height={24}
+                        alt='package search engine' />
+                      <input type="text" placeholder="Enter Destinations" />
+                    </div>
                   </div>
-                  <button className="btn pkg-holidaylisting-col-btn cent">Search</button>
+                  <div className="col-lg-3 col-md-4 pkg-holidaylisting-col-box-input-col start fd-col">
+                    <label>Package Type</label>
+                    <div className='pkg-holidaylisting-col-box-input start fd-row'>
+                      <Image
+                        src='/images/search-engine/time.webp'
+                        className='img-fluid'
+                        width={40}
+                        height={40}
+                        alt='package search engine' />
+                      <select className="form-select" aria-label="Default select example">
+                        <option selected>Package Type</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+                   <div className="col-lg-3 col-md-4 pkg-holidaylisting-col-box-input-col start fd-col">
+                    <label>Package Duration</label>
+                    <div className='pkg-holidaylisting-col-box-input start fd-row'>
+                      <Image
+                        src='/images/search-engine/calender.webp'
+                        className='img-fluid'
+                        width={24}
+                        height={24}
+                        alt='package search engine' />
+                      <select className="form-select" aria-label="Default select example">
+                        <option selected>Package Duration</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div className='col-lg-3 pkg-holidaylisting-col-button cent'>
+                    <button className="btn pkg-holidaylisting-col-btn w-100 cent">Search</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -56,8 +101,8 @@ const PackageDetail = () => {
           <div className="row pkg_detail-page-row start">
             <div className="col-xl-9 col-md-8 pkg_detail-page-colone start fd-col common-gap p-0">
               <PkgDetailOverview />
-             <PkgDetailHighlight /> 
-             
+              <PkgDetailHighlight />
+
               <PkgDetailItinary />
               <PkgDetailInclusionExclusion />
               <div className="row pkg-dp-similar-pkg start common-gap">

@@ -4,6 +4,7 @@ import Image from "next/image";
 import './hoteldetail.css';
 import SearchEngineHotel from "@/component/searchengine/SearchEngineHotel";
 import HotelDGuestReview from '@/component/hoteldguestreview/HotelDGuestReview';
+import HotelDfaq from '@/component/hoteldfaq/HotelDfaq';
 
 
 
@@ -114,6 +115,7 @@ const HotelDetail = () => {
 
                     <div className='row hotel-detail-main_row start common-gap w-100'>
                         <div className='col-9 hotel-detail-main_colone start fd-col'>
+                            <HotelDfaq />
                             <HotelDGuestReview />
                         </div>
                         <div className='col-3 hotel-detail-main_coltwo start fd-col'>
