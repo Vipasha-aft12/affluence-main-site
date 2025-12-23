@@ -1,20 +1,26 @@
+"use client"
 import React from 'react'
 import Link from "next/link";
 import Image from "next/image";
 import './SearchEngine.css';
+import DatePickerModal from '../datepickermodal/DatePickerModal';
+
+
+
+
 
 const SearchEngineFlight = () => {
     return (
         <div className='search-engine-flightcontainer w-100 start fd-col flights'>
             <nav className='search-engine-flightcontainer-nav start fd-row w-100'>
-                <div class="nav nav-tabs search-engine-flightcontainer-nav-tab w-100" id="nav-tab" role="tablist">
-                    <button class="nav-link active search-engine-flightcontainer-nav-btn" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">One Way</button>
-                    <button class="nav-link search-engine-flightcontainer-nav-btn" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Round Trip</button>
-                    <button class="nav-link search-engine-flightcontainer-nav-btn" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Multi-City</button>
+                <div className="nav nav-tabs search-engine-flightcontainer-nav-tab w-100" id="nav-tab" role="tablist">
+                    <button className="nav-link active search-engine-flightcontainer-nav-btn" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">One Way</button>
+                    <button className="nav-link search-engine-flightcontainer-nav-btn" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Round Trip</button>
+                    <button className="nav-link search-engine-flightcontainer-nav-btn" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Multi-City</button>
                 </div>
             </nav>
-            <div class="tab-content search-engine-flightcontainer-nav-tc w-100" id="nav-tabContent">
-                <div class="tab-pane fade show active search-engine-flightcontainer-nav-tp w-100" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+            <div className="tab-content search-engine-flightcontainer-nav-tc w-100" id="nav-tabContent">
+                <div className="tab-pane fade show active search-engine-flightcontainer-nav-tp w-100" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
                     <div className='search-engine-box btwn fd-row w-100 oneway-searchbox'>
                         <div className='se-box start fd-col no-left-border mw-full'>
                             <label>To</label>
@@ -43,13 +49,14 @@ const SearchEngineFlight = () => {
                         <div className='se-box start fd-col mw-half'>
                             <label>Departure Date</label>
                             <div className='se-input-box start fd-row'>
-                                <Image
+                             {/**    <Image
                                     src="/images/search-engine/calender.webp"
                                     className='img-fluid se-box-icon'
                                     width={24}
                                     height={24}
                                     alt="Search Engine Icons" />
-                                <input type='text' placeholder='MM/DD/YYYY' />
+                                <input type='text' placeholder='MM/DD/YYYY' /> */}
+                                <DatePickerModal />
                             </div>
                         </div>
                         <div className='se-box start fd-col disabledbox mw-half'>
@@ -136,7 +143,7 @@ const SearchEngineFlight = () => {
                         <button className='btn se-btn cent'>Search</button>
                     </div>
                 </div>
-                <div class="tab-pane fade search-engine-flightcontainer-nav-tp w-100" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                <div className="tab-pane fade search-engine-flightcontainer-nav-tp w-100" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
                     <div className='search-engine-box btwn fd-row w-100 roundtrip-searchbox'>
                         <div className='se-box start fd-col no-left-border mw-full'>
                             <label>From</label>
@@ -201,7 +208,7 @@ const SearchEngineFlight = () => {
                         <button className='btn se-btn cent'>Search</button>
                     </div>
                 </div>
-                <div class="tab-pane fade search-engine-flightcontainer-nav-tp w-100" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                <div className="tab-pane fade search-engine-flightcontainer-nav-tp w-100" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
                     <div className='search-engine-box btwn fd-row w-100 multicity-searchbox'>
                         <div className='se-box start fd-col no-left-border mw-full'>
                             <label>From</label>

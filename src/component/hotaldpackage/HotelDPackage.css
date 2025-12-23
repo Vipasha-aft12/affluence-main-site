@@ -36,3 +36,12 @@
     border: 2px solid #396bca;
     background: #f4f6fc;
 }
+.hoteld-pkg-box-content{
+    width: 100%;
+}
+@media screen and (max-width: 413px) {
+    .hoteld-pkg-box{
+        flex-direction: column !important;
+        padding: 7px;
+    }
+}

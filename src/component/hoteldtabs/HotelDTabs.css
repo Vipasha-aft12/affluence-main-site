@@ -244,3 +244,82 @@
 .hoteld-room-box-services label>strong{
     font-size: 15px;
 }
+
+@media screen and (max-width: 1400px) {
+    .hoteld-highlights-subbox-img-content{
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+.hoteldroom-detail-coltwo-para{
+    flex-wrap: wrap;
+}
+}
+
+@media screen and (max-width: 767px){
+    .hoteld-overview-box-content p, .hoteld-highlights-favbox-heading-content p, .hoteldroom-detail-coltwo p, .hoteld-room-box-services label ,.hoteld-policies-subbox p{
+        font-size: 13px;
+    }
+    .hoteld-overview-service-box{
+        width: 48%;
+    }
+    .hoteld-overview-service{
+        flex-wrap: wrap;
+        gap: 15px 0px;
+    }
+    .hoteldroom-detail-coltwo-box p, .hoteld-amenities-li, .hoteld-amenities-subboxes-li{
+        font-size: 12px;
+    }
+    .hoteldroom-detail-colone{
+        padding-right: 0px;
+    }
+    .hoteldroom-detail-colone img{
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .hoteldroom-detail-coltwo{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hoteld-tab{
+        padding: 10px;
+    }
+    .hoteld-tab .nav-tabs .nav-link{
+            padding: 5px 10px !important;
+        }
+    .hoteld-highlights-subbox-img-content{
+        width: 100%;
+        height: auto;
+    }
+    .hoteldroom-detail-colthree{
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width : 413px) {
+    .hoteld-overview-important-box{
+        gap: 5px;
+    }
+    .hoteld-room-box-services{
+        flex-direction: column !important;
+    }
+    .hoteld-amenities-li{
+        width: 100%;
+    }
+    .hoteld-amenities-subboxes-one{
+        width: 100%;
+    }
+    .hoteld-review-category-box-rating-outer{
+        width: 140px;
+    }
+    .hoteld-review-category-subbox-pone{
+        width: 18%;
+    }
+    .hoteld-review-category-subbox p{
+        font-size: 12px;
+    }
+}

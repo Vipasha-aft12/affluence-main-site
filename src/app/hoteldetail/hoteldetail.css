@@ -94,7 +94,19 @@
 
 
 
-
+@media screen and (max-width: 1400px) {
+    .hotel-detail-top_overview_images-colone-box img{
+        height: 350px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .hotel-detail-top_overview_images-colone-box img{
+        height: 300px;
+    }
+    .hotel-detail-overview-name, .hotel-detail-overview-name-city, .hotel-detail-overview-rating{
+        font-size: 12px;
+    }
+}
 
 @media screen and (max-width: 992px) {
     .hotel-listing-breadcrumb-row .breadcrumb-item.active, .hotel-listing-properties-col strong, .hotel-listing-breadcrumb-row li>a, .hotel-listing-properties-col p{
@@ -103,5 +115,19 @@
     
     .hotel-listing-breadcrumb, .hotel-listing-properties, .hotellistng-search{
         padding: 10px 0px;
+    }
+    .hotel-detail-top_overview-side_image img{
+        height: 140px;
+    }
+}
+@media screen and (max-width: 767px){
+    .hotel-detail-top_overview_images-coltwo{
+        display: none;
+    }
+    .hotel-detail-container{
+        gap: 25px 0px !important;
+    }
+    .hotel-detail-main_colone{
+        padding: 0px !important;
     }
 }

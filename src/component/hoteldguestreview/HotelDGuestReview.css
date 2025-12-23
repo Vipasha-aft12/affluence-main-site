@@ -85,3 +85,33 @@
 .hotel-d-guest a{
     font-size: 14px;
 }
+
+@media screen and (max-width: 767px) {
+    .hoteld-review-guestbox-top-para{
+        font-size: 13px;
+    }
+    .hoteld-review-category-box-rating-outer{
+        width: 200px;
+    }
+    .hoteld-review-category-box{
+        width: 70%;
+    }
+    .hoteld-review-star img{
+        height: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hoteld-review-category{
+        flex-wrap: wrap;
+        flex-direction: column !important;
+        gap: 10px;
+        align-items: center !important;
+    }
+    .hoteld-review-category-box{
+        width: 100%;
+    }
+    .hoteld-review-category-box-rating-outer{
+        width: 220px;
+    }
+}

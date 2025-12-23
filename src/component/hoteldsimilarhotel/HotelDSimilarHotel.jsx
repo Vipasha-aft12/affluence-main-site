@@ -13,7 +13,7 @@ const HotelDSimilarHotel = () => {
             <div className='col-12 hoteld-shotel-heading'>
                 <h4>Similar Hotels in Dubai</h4>
             </div>
-            <div className="col-4 hoteld-shotel">
+            <div className="col-xl-4 col-sm-6 hoteld-shotel">
                 <div className='hoteld-shotel-box cent fd-col w-100'>
                     <div className='hoteld-shotel-box-image w-100'>
                         <Image

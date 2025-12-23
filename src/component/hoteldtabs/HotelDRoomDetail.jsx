@@ -10,7 +10,7 @@ import "./HotelDTabs.css";
 const HotelDRoomDetail = () => {
     return (
         <div className='row hoteldroom-detail-row cent w-100'>
-            <div className='col-3 hoteldroom-detail-colone ps-0'>
+            <div className='col-md-3 hoteldroom-detail-colone ps-0'>
                 <Image
                     src='/images/hotel/hoteld/hotel-2.webp'
                     className='img-fluid'
@@ -18,7 +18,7 @@ const HotelDRoomDetail = () => {
                     height={440}
                     alt='hotel detail' />
             </div>
-            <div className='col-7 hoteldroom-detail-coltwo start fd-col'>
+            <div className='col-md-7 col-sm-8 hoteldroom-detail-coltwo start fd-col'>
                 <p><strong>Standard Room - Premium</strong></p>
                 <p>Enhanced standard room with upgraded amenities and better views</p>
                 <div className='hoteldroom-detail-coltwo-subbox start fd-row'>
@@ -57,7 +57,7 @@ const HotelDRoomDetail = () => {
                     <span>Upgraded Bathroom</span>
                 </p>
             </div>
-            <div className='col-2 hoteldroom-detail-colthree start fd-col'>
+            <div className='col-md-2 col-sm-4 hoteldroom-detail-colthree start fd-col'>
                 <p>$390/night</p>
                 <p><span>+$40 vs Standard</span></p>
                 <button className='btn hoteldroom-detail-colthree-btn-one mt-2'>Select</button>

@@ -62,7 +62,7 @@ const HotelDetail = () => {
             <section className='hotel-detail'>
                 <div className='container hotel-detail-container start fd-col'>
                     <div className='row hotel-detail-top_overview_images-row'>
-                        <div className='col-6 hotel-detail-top_overview_images-colone'>
+                        <div className='col-md-6 hotel-detail-top_overview_images-colone'>
                             <div className='hotel-detail-top_overview_images-colone-box w-100'>
                                 <Image
                                     src="/images/hotel/hoteld/hotel-1.webp"
@@ -79,7 +79,7 @@ const HotelDetail = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-6 hotel-detail-top_overview_images-coltwo btwn fd-row'>
+                        <div className='col-md-6 hotel-detail-top_overview_images-coltwo btwn fd-row'>
                             <div className='hotel-detail-top_overview-side_image'>
                                 <Image
                                     src="/images/hotel/hoteld/hotel-2.webp"
@@ -119,14 +119,14 @@ const HotelDetail = () => {
                     </div>
 
                     <div className='row hotel-detail-main_row start common-gap w-100'>
-                        <div className='col-8 hotel-detail-main_colone start fd-col common-gap'>
+                        <div className='col-lg-8 hotel-detail-main_colone start fd-col common-gap'>
                              <HotelDTabs />
                             <HotelDSimilarHotel />
                             <HotelDPackage />
                             <HotelDfaq />
                             <HotelDGuestReview />
                         </div>
-                        <div className='col-4 hotel-detail-main_coltwo start fd-col common-gap'>
+                        <div className='col-lg-4 hotel-detail-main_coltwo start fd-col common-gap'>
                            
                             <HotelDLocationNearby />
                             <HotelDBookStay />

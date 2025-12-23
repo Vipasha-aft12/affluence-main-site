@@ -300,3 +300,27 @@
         width: auto;
     }
 }
+
+
+.calendar-overlay {
+  position: fixed;
+  inset: 0;
+  background: white;
+  z-index: 9999;
+}
+
+.calendar-box {
+  padding: 16px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.react-datepicker {
+  border: none;
+  width: 100%;
+}

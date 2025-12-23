@@ -52,3 +52,15 @@
     height: 30px;
     width: auto;
 }
+
+@media screen and (max-width: 767px) {
+    .hoteld-shotel-box-content span{
+        font-size: 15px;
+    }
+    .hoteld-shotel-box-content strong{
+        font-size: 14px;
+    }
+    .hoteld-shotel-box-content p{
+        font-size: 13px;
+    }
+}
