@@ -56,7 +56,7 @@ const PackageDetail = () => {
                       </select>
                     </div>
                   </div>
-                   <div className="col-lg-3 col-md-4 pkg-holidaylisting-col-box-input-col start fd-col">
+                  <div className="col-lg-3 col-md-4 pkg-holidaylisting-col-box-input-col start fd-col">
                     <label>Package Duration</label>
                     <div className='pkg-holidaylisting-col-box-input start fd-row'>
                       <Image
@@ -116,9 +116,12 @@ const PackageDetail = () => {
             </div>
             <div className="col-xl-3 col-md-4 pkg_detail-page-coltwo cent fd-col p-0">
               <PkgWhyChooseUs />
-              <PkgDetailAsideCard />
-              <PkgDetailAsideCard />
               <PkgDetailAsideForm />
+              <PkgDetailAsideCard />
+              <PkgDetailAsideCard />
+
+
+
             </div>
           </div>
         </div>

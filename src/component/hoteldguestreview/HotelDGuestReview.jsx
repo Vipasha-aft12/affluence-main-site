@@ -11,7 +11,7 @@ const HotelDGuestReview = () => {
         <h5><strong>Guest Reviews</strong></h5>
         <div className='hoteld-review-category btwn fd-row w-100'>
           <div className='hoteld-review cent fd-col'>
-            <p><span>4.9</span></p>
+            <h2><strong>4.9</strong></h2>
             <div className='hoteld-review-star cent fd-row'>
               <Image
                 src='/images/hotel/hoteld/star.webp'
@@ -44,36 +44,36 @@ const HotelDGuestReview = () => {
                 height={52}
                 alt='hotel detail image' />
             </div>
-            <p>3456 reviews</p>
+            <p>3456 reviews</p> 
           </div>
           <div className='hoteld-review-category-box start fd-col'>
             <div className='hoteld-review-category-subbox btwn fd-row'>
-              <p>Cleanliness</p>
+              <p className='hoteld-review-category-subbox-pone'>Cleanliness</p>
               <div className='hoteld-review-category-box-rating-outer'>
                 <div className='hoteld-review-category-box-rating-inner hd-rcbri-one'></div>
               </div>
-              <p>4.9</p>
+              <p className='hoteld-review-category-subbox-ptwo'>4.9</p>
             </div>
             <div className='hoteld-review-category-subbox btwn fd-row'>
-              <p>Service</p>
+              <p className='hoteld-review-category-subbox-pone'>Service</p>
               <div className='hoteld-review-category-box-rating-outer'>
                 <div className='hoteld-review-category-box-rating-inner hd-rcbri-one'></div>
               </div>
-              <p>4.7</p>
+              <p className='hoteld-review-category-subbox-ptwo'>4.7</p>
             </div>
             <div className='hoteld-review-category-subbox btwn fd-row'>
-              <p>Location</p>
+              <p className='hoteld-review-category-subbox-pone'>Location</p>
               <div className='hoteld-review-category-box-rating-outer'>
                 <div className='hoteld-review-category-box-rating-inner hd-rcbri-one'></div>
               </div>
-              <p>4.7</p>
+              <p className='hoteld-review-category-subbox-ptwo'>4.7</p>
             </div>
             <div className='hoteld-review-category-subbox btwn fd-row'>
-              <p>Value</p>
+              <p className='hoteld-review-category-subbox-pone'>Value</p>
               <div className='hoteld-review-category-box-rating-outer'>
                 <div className='hoteld-review-category-box-rating-inner hd-rcbri-one'></div>
               </div>
-              <p>4.6</p>
+              <p className='hoteld-review-category-subbox-ptwo'>4.6</p>
             </div>
           </div>
         </div>

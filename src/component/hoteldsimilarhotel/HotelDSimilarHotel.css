@@ -1,0 +1,54 @@
+.hoteld-similar-hotel{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.hoteld-shotel-box{
+    border-radius: 10px;
+    border: 1px solid lightgray;
+}
+.hoteld-shotel-box-image{
+    position: relative;
+}
+.hoteld-shotel-box-image img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.hoteld-shotel-box-discount{
+    position: absolute;
+    color: white !important;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 3px 10px;
+    background: #f50122 ;
+    top: 10px;
+    right: 10px;
+}
+.hoteld-shotel-box-content{
+    padding: 10px;
+    gap: 5px;
+}
+.hoteld-shotel-box-content p{
+    color: gray;
+    font-size: 15px;
+}
+.hoteld-shotel-box-content strong{
+    color: black;
+    font-size: 16px;
+}
+.hoteld-shotel-box-content span{
+    color:#396bca;
+    font-size: 18px;
+    font-weight: 500;
+}
+.hoteld-shotel-box-content-rating{
+    align-items: center !important;
+}
+.hoteld-shotel-box-content-rating img{
+    height: 30px;
+    width: auto;
+}

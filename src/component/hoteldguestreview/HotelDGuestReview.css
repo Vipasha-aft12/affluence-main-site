@@ -1,0 +1,87 @@
+.hotel-d-guest{
+    background: white;
+    border-radius: 10px;
+    gap: 20px;
+    padding: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.hoteld-review-star img{
+    height: 25px;
+    width: auto;
+}
+.hoteld-review h2{
+    color: #396BCA;
+    font-size: 40px;
+}
+.hoteld-review p{
+    font-size: 14px;
+    color: gray;
+    font-weight: 500;
+}
+.hoteld-review-category-subbox p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.hoteld-review-category-subbox{
+    gap: 7px;
+    width: 100%;
+}
+.hoteld-review-category-box-rating-outer{
+    display:block ;
+    background: lightgray;
+    height: 13px;
+    border-radius: 50px;
+    width: 550px;
+}
+.hoteld-review-category-box-rating-inner{
+    border-radius: 50px;
+    height: 13px;
+    background: #396BCA;
+    border-radius: 50px;
+    width: 75%;
+}
+.hoteld-review-category-box{
+    width: 80%;
+    gap: 5px;
+}
+.hoteld-review-category-subbox-pone{
+    width: 16%;
+}
+.hoteld-review-category-subbox-ptwo{
+    width: 3%;
+}
+.hoteld-review-guestbox{
+    border: 1px solid lightgray;
+    padding: 15px;
+    gap: 10px;
+    border-radius: 10px;
+}
+.hoteld-review-guestbox-top-para{
+    font-size: 15px;
+}
+.r-guestbox_name-initial{
+    height: 40px;
+    width: 40px;
+    background: #396BCA;
+    border-radius: 50%;
+}
+.r-guestbox_name-initial p{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+.hoteld-review-guestbox-top-profile{
+    gap: 5px;
+}
+.r-guestbox_name p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.r-guestbox_name span{
+    font-size: 12px;
+    font-weight: 400;
+    color: gray;
+}
+.hotel-d-guest a{
+    font-size: 14px;
+}

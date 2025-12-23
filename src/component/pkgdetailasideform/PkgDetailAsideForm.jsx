@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from "next/link";
 import Image from "next/image";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const PkgDetailAsideForm = () => {
     return (
-        <div className="pkg_dp_aside-form start fd-col">
+        <div className='sticky-top'>
+          <div className="pkg_dp_aside-form start fd-col ">
             <h5>Book This Package</h5>
             <form>
               <div className="row pkg_dp_aside-form-row start">
@@ -117,6 +118,7 @@ const PkgDetailAsideForm = () => {
               </div>
             </form>
           </div>
+        </div>
          
 
     )

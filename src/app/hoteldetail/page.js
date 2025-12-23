@@ -5,6 +5,11 @@ import './hoteldetail.css';
 import SearchEngineHotel from "@/component/searchengine/SearchEngineHotel";
 import HotelDGuestReview from '@/component/hoteldguestreview/HotelDGuestReview';
 import HotelDfaq from '@/component/hoteldfaq/HotelDfaq';
+import HotelDPackage from '@/component/hotaldpackage/HotelDPackage';
+import HotelDSimilarHotel from '@/component/hoteldsimilarhotel/HotelDSimilarHotel';
+import HotelDLocationNearby from '@/component/hoteldlocation/HotelDLocationNearby';
+import HotelDBookStay from '@/component/hoteldbookstay/HotelDBookStay';
+import HotelDTabs from '@/component/hoteldtabs/HotelDTab';
 
 
 
@@ -55,7 +60,7 @@ const HotelDetail = () => {
             </section>
 
             <section className='hotel-detail'>
-                <div className='container hotel-detail-container'>
+                <div className='container hotel-detail-container start fd-col'>
                     <div className='row hotel-detail-top_overview_images-row'>
                         <div className='col-6 hotel-detail-top_overview_images-colone'>
                             <div className='hotel-detail-top_overview_images-colone-box w-100'>
@@ -70,7 +75,7 @@ const HotelDetail = () => {
                                     <p>Downtown Dubai</p>
                                 </div>
                                 <div className='hotel-detail-overview-rating cent fd-row'>
-                                    <p>4.9 (3456 reviews)</p>
+                                    <p>4.9 <span>(3456 reviews)</span></p>
                                 </div>
                             </div>
                         </div>
@@ -99,7 +104,7 @@ const HotelDetail = () => {
                                     height={900}
                                     alt="hotel detail overview image" />
                             </div>
-                            <div className='hotel-detail-top_overview-side_image'>
+                            <div className='hotel-detail-top_overview-side_image hotel-detail-top_overview-side_image-overlay'>
                                 <Image
                                     src="/images/hotel/hoteld/hotel-5.webp"
                                     className='img-fluid'
@@ -114,12 +119,17 @@ const HotelDetail = () => {
                     </div>
 
                     <div className='row hotel-detail-main_row start common-gap w-100'>
-                        <div className='col-9 hotel-detail-main_colone start fd-col'>
+                        <div className='col-8 hotel-detail-main_colone start fd-col common-gap'>
+                             <HotelDTabs />
+                            <HotelDSimilarHotel />
+                            <HotelDPackage />
                             <HotelDfaq />
                             <HotelDGuestReview />
                         </div>
-                        <div className='col-3 hotel-detail-main_coltwo start fd-col'>
-
+                        <div className='col-4 hotel-detail-main_coltwo start fd-col common-gap'>
+                           
+                            <HotelDLocationNearby />
+                            <HotelDBookStay />
                         </div>
                     </div>
 

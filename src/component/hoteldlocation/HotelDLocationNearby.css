@@ -1,0 +1,50 @@
+.hotel-d_locataion{
+    background: white;
+    border-radius: 10px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.hotel-d_locataion-icon{
+    background: lightgray;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 100px;
+}
+.hotel-d_locataion-icon img{
+    height: 52px;
+    width: auto;
+}
+.hotel-d_locataion-content{
+    padding: 15px 10px;
+    gap: 15px;
+}
+.hotel-d_locataion-content-ln-image{
+    border-radius: 5px;
+    background: rgb(214, 237, 245);
+}
+.hotel-d_locataion-content-ln-image img{
+    height: 40px;
+    width: auto;
+}
+.hotel-d_locataion-content-ln-box{
+    gap: 5px;
+}
+.hotel-d_locataion-content-ln-content {
+    font-size: 13px;
+}
+.hoteld-ln-ul{
+    gap: 15px;
+}
+.hoteld-ln-li{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    padding-bottom: 5px;
+}
+.hoteld-ln-li p{
+    font-size: 13px;
+}
+.hoteld-ln-li-noborder{
+    border: none;
+}
+.hotel-d_locataion-content-ln-box{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    padding-bottom: 7px;
+}

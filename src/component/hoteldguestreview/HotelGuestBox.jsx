@@ -50,7 +50,7 @@ const HotelDGuestBox = () => {
             alt='hotel detail image' />
         </div>
       </div>
-      <p>Absolutely wonderful stay! The staff was incredibly helpful and the room was immaculate. The location couldn't be better - walking distance to everything.</p>
+      <p className='hoteld-review-guestbox-top-para'>Absolutely wonderful stay! The staff was incredibly helpful and the room was immaculate. The location couldn't be better - walking distance to everything.</p>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import './hotellisting.css';
 import SearchEngineHotel from "@/component/searchengine/SearchEngineHotel";
 
@@ -266,7 +267,7 @@ export default function Page() {
                           <p className="text-success small">✓ Free cancellation</p>
                         </div>
 
-                        <button className="hotel-listing-box-hotelname-btn btn cent">View Details</button>
+                        <Link href='/hoteldetail'>View Details</Link>
                       </div>
 
                     </div>

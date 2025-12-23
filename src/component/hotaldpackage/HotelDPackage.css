@@ -1,0 +1,38 @@
+.hoteld-pkg{
+     background: white;
+    border-radius: 10px;
+    gap: 20px;
+    padding: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 100%;
+}
+.hoteld-pkg-box{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 15px 15px 10px 15px;
+    align-items: start !important;
+}
+.hoteld-pkg-box-content{
+    gap: 10px;
+}
+.hoteld-pkg-box h5{
+    color: #396bca;
+}
+.hoteld-pkg-box p{
+    color:gray;
+    font-size: 14px;
+}
+.hoteld-pkg-box strong{
+    color: black;
+    font-size: 15px;
+}
+.hoteld-pkg-box-content-ul{
+    gap:10px;
+}
+.hoteld-pkg-box-content-ul li{
+    font-size: 14px;
+}
+.hoteld-pkg-box:hover{
+    border: 2px solid #396bca;
+    background: #f4f6fc;
+}

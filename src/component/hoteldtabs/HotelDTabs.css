@@ -1,0 +1,246 @@
+.hoteld-tab{
+     background: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.hoteld-tab-tp-over_view{
+    gap: 30px 0px;
+}
+.hoteld-overview-box{
+    gap: 15px;
+}
+.hoteld-overview-box-content{
+    gap: 10px;
+}
+.hoteld-overview-box-content p{
+    font-size: 15px;
+}
+.hoteld-overview-service-box{
+    width: 24%;
+    background: #e3e7f3;
+    padding: 7px;
+    border-radius: 5px;
+}
+.hoteld-overview-service-box p{
+    font-size: 14px;
+    color: gray;
+}
+.hoteld-overview-service-box strong{
+    color: black;
+}
+.hoteld-overview-important-heading, .hoteld-overview-important-box{
+    align-items: center !important;
+}
+.hoteld-overview-important-heading img, .hoteld-overview-important-box img{
+    height: 40px;
+    width: auto;
+}
+.hoteld-overview-important-box p{
+    font-size: 14px;
+}
+.hoteld-overview-important-box{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+    gap: 15px;
+}
+.hoteld-overview-important, .hoteld-highlights-box{
+    gap: 15px;
+}
+.hoteld-highlights-subbox{
+    gap: 15px 0px;
+    flex-wrap: wrap;
+}
+.hoteld-highlights-subbox-img-content{
+    width: 48%;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    background: #f4f6fc;
+    height: 70px;
+}
+.hoteld-highlights-subbox-img-content strong{
+    color: black;
+    font-size: 15px;
+}
+.hoteld-highlights-subbox-img-content p{
+    font-size: 14px;
+    color: gray;
+}
+.hoteld-highlights-favbox-heading{
+    background: #396bca;
+    border-radius: 10px;
+    gap: 5px;
+    padding: 10px;
+}
+.hoteld-highlights-favbox-heading-content{
+    gap: 10px;
+    color: white;
+}
+.hoteld-highlights-favbox-heading-content p{
+    font-size: 15px;
+}
+.hoteld-policies-box, .hoteld-policies-subbox{
+    gap: 10px;
+}
+.hoteld-policies-subbox p{
+    font-size: 14px;
+}
+.hoteld-policies-subbox span{
+    font-weight: 500;
+}
+.hoteld-amenities-li{
+    width: 49%;
+    border-radius: 5px;
+    background: #f4f6fc;
+    align-items: center !important;
+    padding: 10px;
+    gap: 5px;
+    font-size: 14px;
+}
+.hoteld-amenities-box-ul{
+    flex-wrap: wrap;
+    gap: 15px 0px;
+}
+.hoteld-amenities-li img{
+    height: 25px;
+    width: auto;
+}
+.hoteld-amenities-box{
+    gap: 25px;
+}
+.hoteld-amenities-subboxes-one{
+    gap: 15px 0px;
+}
+.hoteld-amenities-subboxes-one{
+    width: 48%;
+}
+.hoteld-amenities-subboxes-ul{
+    gap: 10px 0px;
+}
+.hoteld-amenities-subboxes-li{
+    align-items: center !important;
+    font-size: 14px;
+}
+.hoteld-amenities-subboxes-li img{
+    height: 25px;
+    width: auto;
+}
+.hoteld-room-box{
+    gap: 15px 0px;
+}
+
+.hoteld-room-box{
+    gap: 20px 0px;
+}
+.hoteld-room-box h5{
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+    color: gray;
+}
+.hoteldroom-detail-row{
+    border: 2px solid lightgray;
+    border-radius: 10px;
+}
+.hoteldroom-detail-colone img{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    object-fit: cover;
+    height: 220px;
+}
+.hoteldroom-detail-coltwo{
+    gap: 7px;
+}
+.hoteldroom-detail-coltwo strong{
+    font-size: 17px;
+    color: black;
+}
+.hoteldroom-detail-coltwo p{
+    color: gray;
+    font-size: 14px;
+}
+.hoteldroom-detail-coltwo-subbox{
+    gap: 7px 10px;
+}
+.hoteldroom-detail-coltwo-box{
+    align-items: center !important;
+}
+.hoteldroom-detail-coltwo-box img{
+    height: 35px;
+    width: auto;
+}
+.hoteldroom-detail-coltwo-box p{
+    color: black;
+    font-size: 13px;
+}
+.hoteldroom-detail-coltwo-para{
+    gap: 5px;
+}
+.hoteldroom-detail-coltwo-para span{
+    font-size: 11px;
+    color: black;
+    background: lightgray;
+    padding: 3px 7px;
+    border-radius: 5px;
+}
+.hoteldroom-detail-colthree{
+    gap: 5px;
+}
+.hoteldroom-detail-colthree p{
+    font-size: 15px;
+    color: #396bca;
+}
+.hoteldroom-detail-colthree span{
+    color: green;
+    font-size: 12px;
+}
+.hoteldroom-detail-colthree-btn-one, .hoteldroom-detail-colthree-btn-one:hover{
+    background: #396bca !important;
+    color: white !important;
+    font-size: 13px;
+    font-weight: 500;
+}
+.hoteldroom-detail-colthree-btn-two{
+    background: green !important;
+    color: white !important;
+    font-size: 13px;
+    font-weight: 500;
+}
+.hoteldroom-detail-colthree{
+    align-items: end !important;
+}
+.hoteldroom-detail-colthree-btn-two{
+    display: none;
+}
+.hoteldroom-detail-row:hover .hoteldroom-detail-colthree-btn-two{
+    display: flex;
+}
+.hoteldroom-detail-row:hover{
+    border: 2px solid #396bca;
+    background: #e3e7f3;
+}
+.hoteldroom-detail-row:hover .hoteldroom-detail-colthree-btn-one{
+    display: none;
+}
+.hoteld-room-box-services{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 10px;
+}
+.hoteld-room-box-services span{
+    color: #396bca;
+    font-size: 13px;
+}
+.hoteld-room-box-services .form-check{
+    gap: 5px;
+}
+.hoteld-room-box-services label{
+    font-size: 14px;
+}
+.hoteld-room-box-services label>strong{
+    font-size: 15px;
+}

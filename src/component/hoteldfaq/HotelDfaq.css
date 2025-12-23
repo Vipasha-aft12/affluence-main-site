@@ -1,0 +1,32 @@
+.hoteld-faq{
+    background: white;
+    border-radius: 10px;
+    gap: 20px;
+    padding: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.hoteld-faq-accordion{
+    gap: 15px;
+}
+.hoteld-faq-accordion .accordion-header{
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.hoteld-faq-accordion .accordion-button{
+    border-radius: 5px;
+    font-size: 15px;
+}
+.hoteld-faq-accordion .accordion-button:not(.collapsed){
+ background: #001123 !important;
+ color: white !important;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.accordion-body p{
+    font-size: 14px;
+}
+.hotel-d-faq-btn{
+    text-align: right;
+    font-weight: 500;
+}
