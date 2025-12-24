@@ -1813,3 +1813,23 @@ h6 {
         border-radius: 5px !important;
     }
 }
+
+
+
+
+.main-box-date{
+    border: none !important;
+}
+.main-box-date-placeholder{
+    font-size: 14px;
+}
+.btn-close{
+    background: none !important;
+    width: fit-content !important;
+    color: #0e3d6f !important;
+    font-weight: 700 !important;
+}
+.rdp-day:hover{
+    background: #d4def1 !important;
+    border-radius: 50%;
+}

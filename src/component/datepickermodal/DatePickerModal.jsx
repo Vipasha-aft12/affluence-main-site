@@ -16,13 +16,12 @@ export default function DatePickerModal() {
     <>
       {/* Trigger */}
       <div
-        className="border rounded p-3"
+        className="main-box-date"
         style={{ maxWidth: 280, cursor: 'pointer' }}
         onClick={() => setShow(true)}
       >
-        <small className="text-muted">Depart</small>
-        <div className="fw-semibold">
-          {departDate ? departDate.toDateString() : 'Select date'}
+        <div className="main-box-date-placeholder">
+          {departDate ? departDate.toDateString() : 'DD/MM/YYYY'}
         </div>
       </div>
 
@@ -40,12 +39,12 @@ export default function DatePickerModal() {
                 {/* Header */}
                 <div className="modal-header">
                   <h5 className="modal-title">
-                    When are you departing?
+                    Select the Date
                   </h5>
                   <button
                     className="btn-close"
                     onClick={() => setShow(false)}
-                  />
+                  >Clear Date</button>
                 </div>
 
                 {/* Body */}

@@ -2,6 +2,7 @@ import React from 'react'
 import Link from "next/link";
 import Image from "next/image";
 import './SearchEngine.css';
+import DatePickerModal from '../datepickermodal/DatePickerModal';
 
 const SearchEngineCar = () => {
     return (
@@ -39,7 +40,7 @@ const SearchEngineCar = () => {
                         width={24}
                         height={24}
                         alt="Search Engine Icons" />
-                    <input type='text' placeholder='MM/DD/YYYY' />
+                    <DatePickerModal /> 
                 </div>
             </div>
             <div className='se-box start fd-col'>
@@ -51,7 +52,7 @@ const SearchEngineCar = () => {
                         width={24}
                         height={24}
                         alt="Search Engine Icons" />
-                    <input type='text' placeholder='MM/DD/YYYY' />
+                    <DatePickerModal /> 
                 </div>
             </div>
             <button className='btn se-btn cent'>Search</button>

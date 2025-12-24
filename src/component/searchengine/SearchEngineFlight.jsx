@@ -49,14 +49,14 @@ const SearchEngineFlight = () => {
                         <div className='se-box start fd-col mw-half'>
                             <label>Departure Date</label>
                             <div className='se-input-box start fd-row'>
-                             {/**    <Image
+                               <Image
                                     src="/images/search-engine/calender.webp"
                                     className='img-fluid se-box-icon'
                                     width={24}
                                     height={24}
                                     alt="Search Engine Icons" />
-                                <input type='text' placeholder='MM/DD/YYYY' /> */}
-                                <DatePickerModal />
+                                <DatePickerModal /> 
+                                
                             </div>
                         </div>
                         <div className='se-box start fd-col disabledbox mw-half'>
@@ -178,7 +178,7 @@ const SearchEngineFlight = () => {
                                     width={24}
                                     height={24}
                                     alt="Search Engine Icons" />
-                                <input type='text' placeholder='MM/DD/YYYY' />
+                                <DatePickerModal /> 
                             </div>
                         </div>
                         <div className='se-box start fd-col mw-half'>
@@ -190,7 +190,7 @@ const SearchEngineFlight = () => {
                                     width={24}
                                     height={24}
                                     alt="Search Engine Icons" />
-                                <input type='text' placeholder='MM/DD/YYYY' />
+                                <DatePickerModal /> 
                             </div>
                         </div>
                         <div className='se-box start fd-col traveller-box mw-full'>
@@ -243,7 +243,7 @@ const SearchEngineFlight = () => {
                                     width={24}
                                     height={24}
                                     alt="Search Engine Icons" />
-                                <input type='text' placeholder='MM/DD/YYYY' />
+                                <DatePickerModal /> 
                             </div>
                         </div>
                         <div className='se-box start fd-col multicity-add mw-full'>
@@ -292,7 +292,7 @@ const SearchEngineFlight = () => {
                                     width={24}
                                     height={24}
                                     alt="Search Engine Icons" />
-                                <input type='text' placeholder='MM/DD/YYYY' />
+                                <DatePickerModal /> 
                             </div>
                         </div>
                         <div className='se-box start fd-col multicity-add mw-full'>

@@ -6,7 +6,7 @@ import HotelDPackageBox from './HotelDPackageBox';
 
 
 
-const HotelDPackage = () => {
+const HotelDPackage = () => { 
     return (
         <div className='hoteld-pkg start fd-col'>
             <h3>Special Package Deals</h3>
