@@ -7,11 +7,11 @@ import HotelBookingSummary from '@/component/hotelbookingsummary/HotelBookingSum
 
 
 
-
+ 
 const HotelBookingGuestDetail = () => {
     return (
         <section className='hbooking-contact-info-page'>
-            <section className="hotel-listing-breadcrumb bdr-top">
+            <section className="hotel-listing-breadcrumb">
                 <div className="container hotel-listing-breadcrumb-container">
                     <div className="row hotel-listing-breadcrumb-row">
                         <div className="col-12 hotel-listing-breadcrumb-col">
@@ -65,8 +65,8 @@ const HotelBookingGuestDetail = () => {
 
             <section className='hbooking-guest-info'>
                 <div className='container hbooking-guest-info-container'>
-                    <div className='row hbooking-guest-info-row start'>
-                        <div className='col-9 hbooking-guest-info-colone start fd-col'>
+                    <div className='row hbooking-guest-info-row start common-gap'>
+                        <div className='col-md-8 hbooking-guest-info-colone start fd-col common-gap'>
                             <div className='row hbooking-guest-info-colone-top w-100 start'>
                                 <div className='col-12 hbooking-ginfo-col-heading btwn fd-row'>
                                     <h4>Contact Information</h4>
@@ -99,20 +99,20 @@ const HotelBookingGuestDetail = () => {
                                         <div className='col-12 hbooking-add-guest-col'>
                                             <h5>Guest 1</h5>
                                         </div>
-                                        <div className='col-6 hbooking-add-guest-col start fd-col'>
-                                            <lable>First Name*</lable>
+                                        <div className='col-sm-6 hbooking-add-guest-col start fd-col'>
+                                            <label>First Name*</label>
                                             <input type='text' placeholder='First Name' />
                                         </div>
-                                        <div className='col-6 hbooking-add-guest-col start fd-col'>
-                                            <lable>Last Name*</lable>
+                                        <div className='col-sm-6 hbooking-add-guest-col start fd-col'>
+                                            <label>Last Name*</label>
                                             <input type='text' placeholder='Last Name' />
                                         </div>
-                                        <div className='col-6 hbooking-add-guest-col start fd-col'>
-                                            <lable>Date Of Birth*</lable>
+                                        <div className='col-sm-6 hbooking-add-guest-col start fd-col'>
+                                            <label>Date Of Birth*</label>
                                             <input type='date' placeholder='DD-MM-YYYY' />
                                         </div>
-                                        <div className='col-6 hbooking-add-guest-col start fd-col'>
-                                            <lable>Gender*</lable>
+                                        <div className='col-sm-6 hbooking-add-guest-col start fd-col'>
+                                            <label>Gender*</label>
                                             <select className="form-select" aria-label="Default select example">
                                                 <option selected>Male</option>
                                                 <option value="1">Female</option>
@@ -133,11 +133,15 @@ const HotelBookingGuestDetail = () => {
                                 </div>
                             </div>
                             <div className='hbooking-guest-info-colone-bottom btwn w-100'>
-                                <Link href='/hotelboookingcontactinformation'>Previous</Link>
-                                <Link href='/hotelbookingpayment'>Next Step</Link>
+                                <div className='hbooking-guest-info-colone-bottom-btn'>
+                                     <Link href='/hotelboookingcontactinformation'>Previous</Link>
+                                </div>
+                                 <div className='hbooking-guest-info-colone-bottom-btn'>
+                                    <Link href='/hotelbookingpayment'>Next Step</Link>
+                                </div>
                             </div>
                         </div>
-                        <div className='col-3 hbooking-guest-info-coltwo'>
+                        <div className='col-md-4 hbooking-guest-info-coltwo'>
                             <HotelBookingSummary />
                         </div>
                     </div>

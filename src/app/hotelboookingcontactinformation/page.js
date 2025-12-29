@@ -65,9 +65,9 @@ const HotelBookingContactInformation = () => {
 
             <section className='hbooking-contact-info'>
                 <div className='container hbooking-contact-info-container'>
-                    <div className='row hbooking-contact-info-row'>
-                        <div className='col-9 hbooking-contact-info-colone'>
-                            <div className='row hbooking-contact-info-row start w-100'>
+                    <div className='row hbooking-contact-info-row common-gap'>
+                        <div className='col-lg-8 hbooking-contact-info-colone'>
+                            <div className='row hbooking-contact-info-subrow start w-100'>
                                 <h4>Contact Information</h4>
                                 <div className='col-6 hbooking-contact-info-col start fd-col'>
                                     <label>First Name</label>
@@ -105,11 +105,14 @@ const HotelBookingContactInformation = () => {
                                         <p>Booking confirmation and updates will be sent to this email and phone number.</p>
                                     </div>
                                 </div>
-                                 <Link href='/hotelbookingguestdetail'>Next Step</Link>
+                                 
+                            </div>
+                            <div className='hbooking-contact-info-row-btn cent'>
+                                <Link href='/hotelbookingguestdetail'>Next Step</Link>
                             </div>
                         </div>
-                        <div className='col-3 hbooking-contact-info-coltwo'>
-                            <HotelBookingSummary />
+                        <div className='col-lg-4 hbooking-contact-info-coltwo'>
+                            <HotelBookingSummary /> 
                         </div>
                     </div>
                    

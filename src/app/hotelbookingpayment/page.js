@@ -65,8 +65,8 @@ const HotelBookingPayment = () => {
 
             <section className='hbooking-guest-info'>
                 <div className='container hbooking-guest-info-container'>
-                    <div className='row hbooking-guest-info-row start'>
-                        <div className='col-9 hbooking-guest-info-colone start fd-col'>
+                    <div className='row hbooking-guest-info-row start common-gap'>
+                        <div className='col-md-8 hbooking-guest-info-colone start fd-col common-gap'>
                             <div className='row hbooking-guest-info-colone-top w-100 start'>
                                 <div className='col-12 hbooking-ginfo-col-heading btwn fd-row'>
                                     <h4>Contact Information</h4>
@@ -94,15 +94,15 @@ const HotelBookingPayment = () => {
                                     <h4>Guest 1 Information</h4>
                                     <Link href='/hotelbookingguestdetail'>Edit</Link>
                                 </div>
-                                <div className='col-4 hbooking-ginfo-col start fd-col'>
+                                <div className='col-sm-4  col-6 hbooking-ginfo-col start fd-col'>
                                     <p><span>Name</span></p>
                                     <p>a a</p>
                                 </div>
-                                <div className='col-4 hbooking-ginfo-col start fd-col'>
+                                <div className='col-sm-4 col-6 hbooking-ginfo-col start fd-col'>
                                     <p><span>Date of Birth</span></p>
                                     <p>28-12-2025</p>
                                 </div>
-                                <div className='col-4 hbooking-ginfo-col start fd-col'>
+                                <div className='col-sm-4 col-6 hbooking-ginfo-col start fd-col'>
                                     <p><span>Gender</span></p>
                                     <p>Male</p>
                                 </div>
@@ -120,7 +120,7 @@ const HotelBookingPayment = () => {
                                         <p><strong>Important Booking Information</strong></p>
                                     </div>
                                     <p>By confirming this booking, you acknowledge and agree to the following:</p>
-                                    <ul className='start fd-col'>
+                                    <ul className='start fd-col mb-0'>
                                         <li>All guest names provided are accurate and match government-issued identification documents</li>
                                         <li>Check-in and check-out dates have been verified and are correct</li>
                                         <li>You have reviewed and accept the hotel's cancellation policy</li>
@@ -146,13 +146,19 @@ const HotelBookingPayment = () => {
                                 </div>
                             </div>
                             <div className='hbooking-guest-info-colone-bottom btwn w-100'>
-                                <Link href='/hotelbookingguestdetail'>Previous</Link>
-                                <Link href='/hotelbookingstatussuccessful'>Pay Now</Link>
+                                <div className='hbooking-guest-info-colone-bottom-btn'>
+                                    <Link href='/hotelbookingguestdetail'>Previous</Link>
+                                </div>
+                                <div className='hbooking-guest-info-colone-bottom-btn'>
+                                     <Link href='/hotelbookingstatussuccessful'>Pay Now</Link>
+                                </div>
+                                
+                               
                             </div>
                             <Link href='/hotelbookingstatusfailed'>Pay Now (pending)</Link>
                             <Link href='/hotelbookingstatuspending'>Pay Now (failed)</Link>
                         </div>
-                        <div className='col-3 hbooking-guest-info-coltwo'>
+                        <div className='col-md-4 hbooking-guest-info-coltwo'>
                             <HotelBookingSummary />
                         </div>
                     </div>

@@ -1,0 +1,109 @@
+ .hbooking_summary{
+    background: white;
+    gap:15px 0px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    padding: 15px;
+    border-radius: 10px;
+ }
+ .hbooking_summary h5, .HotelBookingSummary-hotel-city{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+    width: 100% !important;
+ }
+ .HotelBookingSummary-hotel{
+    gap: 7px;
+ }
+ .HotelBookingSummary-hotel-rating{
+    align-items: center !important;
+    gap: 1px;
+ }
+ .HotelBookingSummary-hotel-rating img{
+    height: 25px;
+    width: auto;
+ }
+ .HotelBookingSummary-hotel-rating p{
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 3px;
+ }
+ .HotelBookingSummary-hotel strong{
+    font-size: 18px;
+ }
+.HotelBookingSummary-hotel-city img, .HotelBookingSummary-hotel-abtbox img{
+    height: 28px;
+    width: auto;
+}
+ .HotelBookingSummary-hotel-city, .HotelBookingSummary-hotel-abtbox{
+    align-items: center !important;
+    gap: 5px;
+ }
+ .HotelBookingSummary-hotel-city p, .HotelBookingSummary-hotel-abtbox p{
+    color: gray;
+    font-size: 15px;
+    font-weight: 500;
+ }
+ .HotelBookingSummary-hotel-about, .HotelBookingSummary-hotel-tableone{
+    gap: 10px;
+ }
+ .HotelBookingSummary-hotel-tableone td{
+    font-size: 16px;
+    color: gray;
+ }
+ .HotelBookingSummary-hotel-tableone{
+    border-top: 1px solid lightgray;
+    padding-top: 10px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+ }
+ .HotelBookingSummary-hotel-tableone-btm-row{
+    border-top: 1px solid lightgray;
+    padding-top: 10px;
+ }
+ .HotelBookingSummary-hotel-tableone td>span{
+    color: #0e3d6f;
+    font-weight: 500;
+ }
+ .HotelBookingSummary-hotel-tableone td>strong{
+    color: black;
+ }
+ .HotelBookingSummary-notice{
+   background: #f4f6fc;
+   border-radius: 5px;
+   align-items: center !important;
+   padding: 5px;
+   width: 100%;
+   gap: 3px;
+ }
+ .HotelBookingSummary-notice img{
+   height: 25px;
+   width: auto;
+ }
+ .HotelBookingSummary-notice p{
+   font-size: 13px;
+   font-weight: 500;
+ }
+ .HotelBookingSummary-hotel-tabletwo{
+   gap: 10px;
+ }
+ .HotelBookingSummary-hotel-tabletwo tr{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+ }
+ .no-border-tr{
+   border: none !important;
+ }
+ .HotelBookingSummary-hotel-tabletwo td{
+   font-size: 15px;
+   color: black;
+ }
+ .HotelBookingSummary-hotel-tabletwo td>span{
+   color: gray;
+   font-weight: 500;
+ }
+ 
+
+ @media screen and (max-width: 576px) {
+   .HotelBookingSummary-hotel-city p, .HotelBookingSummary-hotel-abtbox p,.HotelBookingSummary-hotel-tableone td, .HotelBookingSummary-hotel-tabletwo td{
+      font-size: 14px;
+   }
+ }

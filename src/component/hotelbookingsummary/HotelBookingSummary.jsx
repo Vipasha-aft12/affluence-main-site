@@ -7,7 +7,7 @@ import "./HotelBookingSummary.css";
 const HotelBookingSummary = () => {
     return (
         <div className='hbooking_summary w-100 start fd-col'>
-            <h4>Booking Summary</h4>
+            <h5>Booking Summary</h5>
             <div className='HotelBookingSummary-hotel start fd-col w-100'>
                 <Image
                     src='/images/hotel/hoteld/hotel-1.webp'
@@ -43,7 +43,7 @@ const HotelBookingSummary = () => {
                         alt='hotel booking status' />
                     <p>4.9</p>
                 </div>
-                <div className='HotelBookingSummary-hotel-city start fd-row'>
+                <div className='HotelBookingSummary-hotel-city start fd-row w-100 pb-3'>
                     <Image
                         src='/images/hotel/hoteld/location.webp'
                         className='img-fluid'
@@ -94,15 +94,15 @@ const HotelBookingSummary = () => {
                 </div>
             </div>
             <table className='HotelBookingSummary-hotel-tableone start fd-col w-100'>
-                <tr>
+                <tr className='btwn w-100'>
                     <td>Room (1 night)</td>
                     <td><strong>$350.00</strong></td>
                 </tr>
-                <tr>
+                <tr  className='btwn w-100'>
                     <td>Taxes & Fees</td>
                     <td>$52.50</td>
                 </tr>
-                <tr>
+                <tr  className='btwn w-100 HotelBookingSummary-hotel-tableone-btm-row'>
                     <td><strong>Total</strong></td>
                     <td><span>$350.00</span></td>
                 </tr>
@@ -120,43 +120,43 @@ const HotelBookingSummary = () => {
                 <th>
                     <td>Hotel Policy</td>
                 </th>
-                <tr>
+                <tr  className='btwn w-100'>
                     <td><span>Check-in	</span></td>
                     <td>3:00 PM - 11:00 PM</td>
                 </tr>
-                <tr>
+                <tr  className='btwn w-100'>
                     <td><span>Check-out	</span></td>
                     <td>Before 12:00 PM</td>
                 </tr>
-                <tr>
+                <tr  className='btwn w-100'>
                     <td><span>Cancellation	</span></td>
                     <td>Free until 48h</td>
-                </tr>
-                <tr>
+                </tr> 
+                <tr  className='btwn w-100'>
                     <td><span>Age Requirement</span></td>
                     <td>21+ years old</td>
                 </tr>
-                <tr>
+                <tr  className='btwn w-100'>
                     <td><span>Pets</span></td>
                     <td>Allowed (+$50/night)</td>
                 </tr>
-                <tr>
+                <tr  className='btwn w-100'>
                     <td><span>Smoking	</span></td>
                     <td>Non-smoking rooms</td>
                 </tr>
-                <tr>
+                <tr  className='btwn w-100'>
                     <td><span>Payment	</span></td>
                     <td>Credit/Debit card</td>
                 </tr>
-                <tr>
+                <tr  className='btwn w-100'>
                     <td><span>Deposit</span></td>
                     <td>$100 refundable</td>
                 </tr>
-                <tr>
+                <tr  className='btwn w-100'>
                     <td><span>ID Required	</span></td>
                     <td>Government-issued</td>
                 </tr>
-                <tr>
+                <tr  className='btwn w-100 no-border-tr'>
                     <td><span>Children	</span></td>
                     <td>Welcome (0-12 free)</td>
                 </tr>
