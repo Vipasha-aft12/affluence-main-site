@@ -1,0 +1,36 @@
+.hotel-booking-cancellation{
+    background: white;
+   border-radius: 15px;
+   padding: 20px 10px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 4px 0px;
+   margin: auto;
+}
+.hotel-booking-cancellation-heading{
+    align-items: center;
+    gap: 3px;
+}
+.hotel-booking-cancellation-heading img{
+    height: 40px;
+    width: auto;
+}
+.hotel-booking-cancellation-col{
+    gap: 15px;
+}
+.hotel-booking-cancellation-col p, .hotel-booking-cancellation-col li{
+    font-size: 15px;
+}
+.hotel-booking-cancellation-col-ul{
+    gap: 10px;
+}
+.hotel-booking-cancellation-dis{
+    background: rgb(233, 232, 232);
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+@media screen and (max-width: 576px) {
+    .hotel-booking-cancellation-col p, .hotel-booking-cancellation-col li{
+        font-size: 14px;
+    }
+}

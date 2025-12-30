@@ -7,6 +7,7 @@ import HotelBookingCancellationPolicy from '@/component/hotelbookingcancellation
 
 
 
+
 const HotelBookingSuccessful = () => {
     return (
         <section className='hotel-booking-successful-page'>
@@ -30,12 +31,12 @@ const HotelBookingSuccessful = () => {
             </section>
 
             <section className='hotel-booking-successful'>
-                <div className='container hotel-booking-successful-container'>
+                <div className='container hotel-booking-successful-container start fd-col common-gap'>
                     <div className='row hotel-booking-successful-confirmed w-100'>
                         <div className='col-12 hotel-booking-successful-confirmed-col cent fd-col'>
                             <Image
                                 src="/images/hotel/hotelb/green-booking-sucessful.webp"
-                                className='img-fluid'
+                                className='img-fluid booking-successful-img'
                                 width={276}
                                 height={276}
                                 alt="hotel booking status" />
@@ -74,11 +75,40 @@ const HotelBookingSuccessful = () => {
                             </div>
                         </div>
                     </div>
+                    <div className='row hbooking-guest-info-colone-top w-100 start'>
+                        <div className='col-12 hbooking-ginfo-col-heading btwn fd-row'>
+                            <h4>Contact Information</h4>
+                        </div>
+                        <div className='col-6 hbooking-ginfo-col start fd-col'>
+                            <p><span>Name</span></p>
+                            <p>a</p>
+                        </div>
+                        <div className='col-6 hbooking-ginfo-col start fd-col'>
+                            <p><span>Email</span></p>
+                            <p>a</p>
+                        </div>
+                        <div className='col-6 hbooking-ginfo-col start fd-col'>
+                            <p><span>Phone</span></p>
+                            <p>a</p>
+                        </div>
+                        <div className='col-6 hbooking-ginfo-col start fd-col'>
+                            <p><span>Country</span></p>
+                            <p>United States</p>
+                        </div>
+                    </div>
                     <div className='row hotel-booking-successful-summary w-100'>
                         <div className='col-12 hotel-booking-successful-summary-col start fd-col'>
                             <h4>Booking Summary</h4>
+                            <div className='w-100 bs-hotel-image'>
+                                <Image
+                                    src='/images/hotel/hoteld/hotel-1.webp'
+                                    className='img-fluid hbshotel-name'
+                                    width={1638}
+                                    height={900}
+                                    alt='hotel booking status' />
+                            </div>
                             <div className='hotel-booking-successful-summary-pkg-info start fd-col'>
-                                <p><strong>Package Information</strong></p>
+                                <h5><strong>Package Information</strong></h5>
                                 <div className='hotel-booking-successful-summary-pkg-info-box start fd-row'>
                                     <Image
                                         src="/images/hotel/hoteld/location.webp"
@@ -99,10 +129,10 @@ const HotelBookingSuccessful = () => {
                                 </div>
                                 <div className='hotel-booking-successful-summary-pkg-info-box start fd-row'>
                                     <Image
-                                        src="/images/hotel/hoteld/takeoff.webp"
+                                        src="/images/hotel/hoteld/Calender.webp"
                                         className='img-fluid'
-                                        width={24}
-                                        height={24}
+                                        width={52}
+                                        height={52}
                                         alt="hotel booking status" />
                                     <p>Departure: June 15, 2024</p>
                                 </div>
@@ -117,26 +147,44 @@ const HotelBookingSuccessful = () => {
                                 </div>
                             </div>
                             <table className='hotel-booking-successful-summary-table start fd-col w-100'>
-                                <th><td><strong>Payment Details</strong></td></th>
-                                <tr>
-                                    <td>Package Price</td>
-                                    <td>$1,299</td>
-                                </tr>
-                                <tr>
-                                    <td>Taxes & Fees</td>
-                                    <td>$150</td>
-                                </tr>
-                                <tr>
-                                    <td>Service Charge</td>
-                                    <td>$50</td>
-                                </tr>
-                                <tr className='hotel-booking-successful-summary-table-btmrow'>
-                                    <td>Total Paid</td>
-                                    <td><span>$1499</span></td>
-                                </tr>
+                                <th><h5><strong>Payment Detail</strong></h5></th>
+                                <tbody className='hotel-booking-successful-summary-tablebody start fd-col w-100'>
+                                    <tr className='btwn fd-row'>
+                                        <td>Hotel Accommodation (4 Nights)</td>
+                                        <td>$699</td>
+                                    </tr>
+                                    <tr  className='btwn fd-row'>
+                                        <td>Round-trip Flights</td>
+                                        <td>$150</td>
+                                    </tr>
+                                    <tr  className='btwn fd-row'>
+                                        <td>Airport Transfers</td>
+                                        <td>$50</td>
+                                    </tr>
+                                    <tr  className='btwn fd-row'>
+                                        <td>Daily Breakfast</td>
+                                        <td>$100</td>
+                                    </tr>
+                                    <tr  className='btwn fd-row'>
+                                        <td>Spa & Wellness Package</td>
+                                        <td>$100</td>
+                                    </tr>
+                                    <tr  className='btwn fd-row'>
+                                        <td>Taxes & Fees</td>
+                                        <td>$100</td>
+                                    </tr>
+                                    <tr  className='btwn fd-row'>
+                                        <td>Service Charge</td>
+                                        <td>$100</td>
+                                    </tr>
+                                    <tr className='hotel-booking-successful-summary-table-btmrow btwn fd-row'>
+                                        <td><strong>Total Paid</strong></td>
+                                        <td><span>$1499</span></td>
+                                    </tr>
+                                </tbody>
                             </table>
                             <div className='hotel-booking-successful-summary-next start fd-col'>
-                                <h5>What's Next?</h5>
+                                <h5><strong>What's Next?</strong></h5>
                                 <div className='hotel-booking-successful-summary-next-box start fd-row'>
                                     <Image
                                         src="/images/hotel/hotelb/booking-sucessful.webp"
@@ -178,7 +226,7 @@ const HotelBookingSuccessful = () => {
                     </div>
                     <div className='row hotel-booking-successful-confirmed-help w-100'>
                         <div className='col-12 hotel-booking-successful-confirmed-help-col start fd-col'>
-                            <h5>Need Help?</h5>
+                            <h5><strong>Need Help?</strong></h5>
                             <p>Our customer support team is available 24/7 to assist you with any questions.</p>
                             <div className='hotel-booking-successful-confirmed-help-box btwn fd-row w-100'>
                                 <div className='hotel-booking-successful-confirmed-help-subbox start fd-row'>

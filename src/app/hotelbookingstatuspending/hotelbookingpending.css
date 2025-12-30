@@ -1,0 +1,245 @@
+  .hotel-booking-successful-breadcrumb{
+    border-bottom: 1px solid lightgray !important;
+    padding: 20px 0px;
+ }
+ .hotel-booking-successful-breadcrumb-col li, .hotel-booking-successful-breadcrumb-col a{
+    color: gray;
+    font-size: 15px;
+ }
+
+ .hotel-booking-successful{
+    padding: 50px 0px;
+    background: #f4f6fc;
+ }
+ .hotel-booking-successful .row{
+   margin: auto;
+ }
+
+ .hotel-booking-successful-confirmed, .hbooking-guest-info-colone-top, .hotel-booking-successful-summary{
+   background: white;
+   border-radius: 15px;
+   padding: 20px 10px;
+   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 4px 0px;
+ }
+ .hotel-booking-successful-confirmed-col{
+   gap: 15px;
+ }
+ .booking-successful-img{
+   height: 100px;
+   width: auto;
+ }
+ .hotel-booking-successful-confirmed-col p{
+   font-size: 18px;
+ }
+ .hotel-booking-successful-confirmed-col strong{
+   color: green;
+   font-size: 20px;
+ }
+ .hotel-booking-successful-confirmed-col span{
+   color: gray;
+ }
+ .hotel-booking-successful-confirmed-buttons{
+   gap: 25px;
+ }
+ .hotel-booking-successful-download-btn, .hotel-booking-successful-backhome-btn{
+   display: flex !important;
+   border: 1px solid lightgray;
+   border-radius: 10px;
+   gap: 5px;
+   font-weight: 700;
+   padding: 10px 20px;
+   font-size: 18px;
+   color: black !important;
+   background: transparent !important;
+ }
+ .hotel-booking-successful-download-btn:hover, .hotel-booking-successful-backhome-btn:hover{
+   background: #396BCA !important;
+   color: white !important;
+ }
+ .hotel-booking-successful-download-btn img, .hotel-booking-successful-backhome-btn img{
+   height: 35px;
+   width: auto;
+ }
+ .hotel-booking-successful-confirmed-box{
+   border: 1px solid lightgreen;
+   background: rgb(220, 255, 231);
+   padding: 15px 20px;
+   border-radius: 10px;
+   margin: 10px 0px;
+ }
+ .hotel-booking-successful-confirmed-subbox p{
+   font-size: 15px;
+   color: gray;
+   font-weight: 500;
+ }
+ .hotel-booking-successful-confirmed-subbox span{
+   font-size: 18px;
+   color: black;
+ }
+ .hbooking-guest-info-colone-top{
+   gap: 15px 0px;
+ }
+ .hbooking-ginfo-col p{
+   font-size: 15px;
+ }
+ .hbooking-ginfo-col span{
+   color: gray;
+   font-weight: 500;
+ }
+ .hotel-booking-successful-summary-col{
+   gap: 15px;
+ }
+ .bs-hotel-image{
+   border-bottom: 1px solid lightgray;
+   padding-bottom: 10px;
+ }
+ .bs-hotel-image img{
+   height: 300px;
+   object-fit: cover;
+   width: 100%;
+   border-radius: 10px;
+ }
+.hotel-booking-successful-summary-pkg-info{
+  gap:10px;
+}
+.hotel-booking-successful-summary-pkg-info-box{
+  align-items: center !important;
+  gap: 5px;
+}
+.hotel-booking-successful-summary-pkg-info-box img{
+  height: 30px;
+  width: auto;
+}
+.hotel-booking-successful-summary-pkg-info-box p{
+  font-size: 15px;
+  font-weight: 500;
+}
+.hotel-booking-successful-summary-table, .hotel-booking-successful-summary-tablebody{
+  gap: 10px;
+}
+.hotel-booking-successful-summary-tablebody tr{
+  width: 100%;
+}
+.hotel-booking-successful-summary-tablebody td{
+  font-size: 15px;
+  font-weight: 500;
+  color: gray;
+}
+.hotel-booking-successful-summary-table-btmrow{
+  padding: 10px 0px;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  margin-top: 10px;
+}
+.hotel-booking-successful-summary-table-btmrow strong{
+  color: black;
+  font-size: 18px;
+}
+.hotel-booking-successful-summary-table-btmrow span{
+  color: green;
+  font-size: 18px;
+}
+.hotel-booking-successful-summary-next{
+  gap: 15px;
+}
+.hotel-booking-successful-summary-next-box{
+  align-items: center !important;
+  gap: 10px;
+  font-size: 15px;
+  color: gray;
+  font-weight: 500;
+}
+.hotel-booking-successful-summary-next-box img{
+  height: 20px;
+  width: auto;
+}
+.hotel-booking-successful-confirmed-help{
+  border: 1px solid #396BCA;
+  background: #cad9f7;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+.hotel-booking-successful-confirmed-help-col{
+  gap: 15px;
+}
+.hotel-booking-successful-confirmed-help-col p{
+  font-size: 15px;
+  font-weight: 500;
+}
+.hotel-booking-successful-confirmed-help-subbox{
+  align-items: center !important;
+  gap: 5px;
+}
+.hotel-booking-successful-confirmed-help-subbox a{
+  color: #396BCA;
+  font-size: 15px;
+  font-weight: 500;
+}
+.hotel-booking-successful-confirmed-help-subbox img{
+  height: 30px;
+  width: auto;
+}
+.hotel-booking-pending-col strong{
+    color: orange;
+}
+.hotel-booking-pending-box{
+    background: rgb(252, 241, 221);
+    gap: 5px;
+    padding: 10px;
+    border: 1px solid orange;
+    border-radius: 10px;
+}
+.hotel-booking-pending-box p{
+    width: 100%;
+    color: orange;
+    text-align: left;
+}
+.hotel-booking-pending-box-rn{
+    background: rgb(243, 243, 243);
+    gap: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .hotel-booking-successful{
+        padding: 25px 0px;
+    }
+    .hotel-booking-successful-confirmed-col p{
+        text-align: center;
+        font-size: 15px;
+    }
+    .hotel-booking-successful-confirmed-subbox span{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 576px) {
+  .hotel-booking-successful-confirmed-col, .hbooking-guest-info-colone-top, .hotel-booking-successful-summary-col, .hotel-booking-successful-confirmed-help-box{
+    gap: 10px;
+  }
+  .booking-successful-img{
+    height: 70px;
+  }
+  .hotel-booking-successful-confirmed-box{
+    gap: 10px;
+  }
+    .hotel-booking-successful-confirmed-subbox span,.hotel-booking-successful-confirmed-col p, .hbooking-ginfo-col p, .hotel-booking-successful-summary-pkg-info-box p, .hotel-booking-successful-summary-tablebody td, .hotel-booking-successful-summary-next-box p, .hotel-booking-successful-confirmed-help-col p{
+        font-size: 14px;
+    }
+    .bs-hotel-image img{
+        height: 200px;
+    }
+    .hotel-booking-successful-confirmed-buttons, .hotel-booking-successful-confirmed-help-box, .hotel-booking-successful-confirmed-box{
+        flex-wrap: wrap;
+        justify-content: flex-start !important;
+    }
+    .hotel-booking-successful-download-btn img, .hotel-booking-successful-backhome-btn img{
+        height: 20px;
+    }
+    .hotel-booking-successful-download-btn, .hotel-booking-successful-backhome-btn{
+        width: 100%;
+    }
+    .hotel-booking-successful-summary-table-btmrow strong{
+        font-size: 15px;
+    }
+}
