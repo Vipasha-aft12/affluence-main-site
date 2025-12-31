@@ -1,0 +1,37 @@
+ .homepage_airlinep-col-box{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    gap: 5px;
+ }
+ .homepage_airlinep-col-box img{
+    height: 100px;
+    width: 120px;
+    object-fit: cover;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+ }
+ .homepage_airlinep-info{
+    padding: 5px;
+    gap: 5px;
+ }
+ .homepage_airlinep-info p{
+    font-size: 15px;
+ }
+
+ @media screen and (max-width: 992px){
+   .homepage_airlinep-info p{
+      font-size: 14px;
+   }
+   .homepage_airlinep-col-box img{
+      height: 80px;
+      width: 80px;
+   }
+   .homepage_airlinep-info h5{
+      font-size: 15px;
+   }
+ }
+ @media screen and (max-width: 767px) {
+   .homepage_airlinep-col-box{
+      justify-content: flex-start !important;
+   }
+ }

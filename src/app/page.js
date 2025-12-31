@@ -2,6 +2,9 @@
 import HomepageAirlinePartner from "@/component/homepageairlinepartner/HomepageAirlinePartner";
 import HomepageExclusiveOffer from "@/component/homepageexclusiveoffer/HomepageExclusiveOffer";
 import HomepageHotel from "@/component/homepagehotel/HomepageHotel";
+import HomepageIconicPlaces from "@/component/homepageiconicplaces/HomepageIconicPlaces";
+import HomepageReview from "@/component/homepagereview/HomepageReview";
+import HomepageTblog from "@/component/homepagetblog/HomepageTblog";
 import HomepageTravelPartner from "@/component/homepagetravelpartner/HomepageTravelPartner";
 import PackageLpChoice from "@/component/packagelpchoice/PackageLpChoice";
 import SearchEngine from "@/component/searchengine/SearchEngine";
@@ -11,10 +14,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <section className="homepage">
-      <div className="container homepage-container">
+      <div className="container homepage-container start fd-col">
 
         <div className="row homepage-banner-row">
-          <div className="col-12 homepage-banner-heading">
+          <div className="col-12 homepage-banner-heading cent">
             <h1>Discover Your Next <br />
               <span>Luxury Adventure</span></h1>
           </div>
@@ -24,15 +27,15 @@ export default function Home() {
         </div>
 
         <div className="row homepage-exclusive-offer start common-gap w-100 homepage-common-row">
-          <div className="col-12 homepage-exclusive-offer-heading">
+          <div className="col-12 homepage-exclusive-offer-heading hp-common-heading-gap start fd-col">
             <h2>Exclusive Offer</h2>
             <p>Discover limited-time deals to your dream destinations.</p>
           </div>
           <HomepageExclusiveOffer />
-        </div>
+        </div> 
 
         <div className="row homepage-airlinepartner start common-gap w-100 homepage-common-row">
-          <div className="col-12 homepage-airlinepartner-heading">
+          <div className="col-12 homepage-airlinepartner-heading hp-common-heading-gap start fd-col">
             <h2>Experience Flying with our Airline Partners</h2>
           </div>
           <div className="col-12 homepage-airlinepartner-col">
@@ -53,32 +56,35 @@ export default function Home() {
               alt="cruise image" />
             <h2 className="homepage-cruise-col-heading">Seamless journeys, expertly guided <br />from start to finish</h2>
             <div className="hp-cruise-boxes start fd-col">
-              <div className="hp-cruise-subboxes cent fd-row">
+              <div className="hp-cruise-subboxes btwn fd-row">
+                <p><strong>Amenities for a fun-filled experience</strong></p>
                 <Image
                   src="/images/homepage/cruise-1.webp"
                   width={200}
                   height={191}
                   className="img-fluid hp_cruise-image"
                   alt="cruise image" />
-                <p><strong>Amenities for a fun-filled experience</strong></p>
+                
               </div>
-              <div className="hp-cruise-subboxes cent fd-row">
+              <div className="hp-cruise-subboxes btwn fd-row">
+                <p><strong>Dining with stunning ocean views</strong></p>
                 <Image
                   src="/images/homepage/cruise-2.webp"
                   width={200}
                   height={191}
                   className="img-fluid hp_cruise-image"
                   alt="cruise image" />
-                <p><strong>World class performance</strong></p>
+                
               </div>
-              <div className="hp-cruise-subboxes cent fd-row">
+              <div className="hp-cruise-subboxes btwn fd-row">
+                <p><strong>Dining with stunning ocean views</strong></p>
                 <Image
                   src="/images/homepage/cruise-3.webp"
                   width={200}
                   height={191}
                   className="img-fluid hp_cruise-image"
                   alt="cruise image" />
-                <p><strong>Dining with stunning ocean views</strong></p>
+                
               </div>
             </div>
           </div>
@@ -102,25 +108,25 @@ export default function Home() {
           <HomepageTravelPartner />
         </div>
 
-        <div className="row homepage-mid-banner">
+        <div className="row homepage-mid-banner cent">
           <div className="col-3 homepage-midbanner-colone">
             <a href="tel:+1-888-829-1141">
               <Image
-                src='/images/homepage/mid-banner-one.webp'
+                src='/images/homepage/mid-banner-one.png'
                 className='img-fluid homepage-mid-bannerone'
                 width={222}
                 height={190}
                 alt='Homepage mid banner' />
             </a>
           </div>
-          <div className="col-6 homepage-midbanner-content start fd-col">
+          <div className="col-lg-6 homepage-midbanner-content start fd-col hp-common-heading-gap start fd-col">
             <h3>From Flights to stays, we've got you covered. Book with ease and travel with confidence.</h3>
             <a href="tel:+1-888-829-1141">Call us at <span>+1-888-829-1141</span> -we're here to help.</a>
           </div>
-          <div className="col-3 homepage-midbanner-colone">
+          <div className="col-3 homepage-midbanner-colone cent">
             <a href="tel:+1-888-829-1141">
               <Image
-                src='/images/homepage/mid-banner-two.webp'
+                src='/images/homepage/mid-banner-two.png'
                 className='img-fluid homepage-mid-bannertwo'
                 width={166}
                 height={190}
@@ -156,6 +162,30 @@ export default function Home() {
           <PackageLpChoice />
           <PackageLpChoice />
           <PackageLpChoice />
+        </div>
+
+        <div className="row homepage-iconic start common-gap w-100 homepage-common-row">
+          <div className="col-12 homepage-iconic-heading">
+            <h2>Iconic places you need to see</h2>
+          </div>
+          <HomepageIconicPlaces />
+        </div>
+
+        <div className="row homepage-tblog start common-gap w-100 homepage-common-row">
+          <div className="col-12 homepage-tblog-heading">
+            <h2>Enjoy Fresh Travel Blogs</h2>
+          </div>
+          <HomepageTblog />
+          <HomepageTblog />
+          <HomepageTblog />
+          <HomepageTblog />
+        </div>
+
+        <div className="row homepage-review start common-gap w-100">
+          <HomepageReview />
+          <HomepageReview />
+          <HomepageReview />
+          <HomepageReview />
         </div>
 
       </div>

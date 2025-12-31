@@ -39,7 +39,7 @@ const placesData = [
 
 const HomepageIconicPlaces = () => {
     return (
-        <div className="col-12 homepage-iconic-place-col btwn fd-row">
+        <div className="col-12 homepage-iconic-place-col btwn fd-row common-gap">
             {placesData.map((item, index) => (
                 <div className="homepage-iconic-place-box" key={index}>
                     <div className="homepage-iconic-place-image">
@@ -50,7 +50,9 @@ const HomepageIconicPlaces = () => {
                             alt={item.title}
                             className="img-fluid homepage-iconic-place-img"
                         />
-                        <h3 className="homepage-iconic-place-title">{item.title}</h3>
+                        <div className="homepage-iconic-place-title">
+                            <h3>{item.title}</h3>
+                        </div>
                     </div>
                 </div>
             ))}

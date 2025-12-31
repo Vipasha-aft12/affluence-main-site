@@ -1469,7 +1469,7 @@ h6 {
 }
 
 .pkg_iti-tc .nav-tabs .nav-item.show .nav-link,
-.nav-tabs .nav-link.active {
+.pkg_iti-tc .nav-tabs .nav-link.active {
     padding: 5px 10px;
     background: black !important;
     border-radius: 5px !important;
@@ -1795,21 +1795,25 @@ h6 {
 }
 
 @media screen and (max-width: 992px) {
-    .pkg-holidaylisting-col-box{
+    .pkg-holidaylisting-col-box {
         border-radius: 10px !important;
         gap: 15px 0px;
         padding: 20px 5px;
-         align-items: end !important;
+        align-items: end !important;
     }
-    .pkg-holidaylisting-col-box-input{
+
+    .pkg-holidaylisting-col-box-input {
         border: 1px solid lightgray;
         border-radius: 5px;
         padding: 5px;
     }
-    .pkg-holidaylisting-col-button{
+
+    .pkg-holidaylisting-col-button {
         align-items: end !important;
     }
-    .pkg-holidaylisting-col-btn, .pkg-holidaylisting-col-btn:hover{
+
+    .pkg-holidaylisting-col-btn,
+    .pkg-holidaylisting-col-btn:hover {
         border-radius: 5px !important;
     }
 }
@@ -1817,19 +1821,305 @@ h6 {
 
 
 
-.main-box-date{
+.main-box-date {
     border: none !important;
 }
-.main-box-date-placeholder{
+
+.main-box-date-placeholder {
     font-size: 14px;
 }
-.btn-close{
+
+.btn-close {
     background: none !important;
     width: fit-content !important;
     color: #0e3d6f !important;
     font-weight: 700 !important;
 }
-.rdp-day:hover{
+
+.rdp-day:hover {
     background: #d4def1 !important;
     border-radius: 50%;
+}
+
+
+
+/*----------new homepage design-----*/
+.homepage {
+    background: #f8f8f8;
+}
+
+.homepage-container {
+    margin: auto;
+    gap: 40px 0px;
+}
+
+.homepage-container .row {
+    margin: auto;
+}
+
+.homepage-banner-row {
+    background-image: url("/homepage-banner.webp");
+    background-size: cover;
+    height: auto;
+    padding: 25px 35px 35px 25px;
+}
+
+.homepage-banner-heading h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.homepage-banner-heading h1>span {
+    color: rgb(255, 196, 0);
+}
+
+.homepage-common-row {
+    border-radius: 10px;
+    background: white;
+    padding: 20px 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.hp-common-heading-gap {
+    gap: 10px 0px;
+}
+
+.hp-common-heading-gap p {
+    font-size: 17px;
+}
+
+.homepage-cruise-col {
+    position: relative;
+}
+
+.homepage-cruise-col-heading {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.hp_cruise-main-image {
+    border-radius: 10px;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hp-cruise-boxes {
+    position: absolute;
+    right: 25px;
+    gap: 10px;
+    top: 10px;
+    bottom: 10px;
+    width: 27%;
+}
+
+.hp_cruise-image {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hp-cruise-subboxes p {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.hp-cruise-subboxes {
+    width: 100%;
+}
+
+.homepage-mid-banner {
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #0e3d6f, #396BCA, #0e3d6f);
+    padding: 15px 15px 0px 15px;
+}
+
+.homepage-midbanner-content {
+    gap: 10px;
+}
+
+.homepage-midbanner-content h3,
+.homepage-midbanner-content a {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.homepage-midbanner-content a {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.homepage-midbanner-content span {
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0px 5px 0px 5px;
+}
+
+.homepage-car_rental-col {
+    position: relative;
+    align-items: center !important;
+}
+
+.homepage-car_rental-col img {
+    height: 300px;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.homepage-car-rental-content {
+    position: absolute;
+    top: 15px;
+    gap: 20px;
+    left: 25px;
+    width: 40%;
+}
+
+.homepage-car-rental-content p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.homepage-car-rental-content h3 {
+    font-weight: 700;
+}
+
+.homepage-car-rental-content p,
+.homepage-car-rental-content h3 {
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+@media screen and (max-width: 1400px) {
+    .hp_cruise-main-image {
+        height: 350px !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .homepage-container {
+        gap: 25px 0px;
+    }
+
+    .homepage .common-gap {
+        gap: 15px 0px;
+    }
+
+    .hp-common-heading-gap p {
+        font-size: 14px;
+    }
+
+    .hp-cruise-boxes{
+        bottom: 10px;
+        width: 95%;
+        left: 20px;
+        top: auto;
+        right: 20px;
+    }
+    .hp-cruise-boxes{
+        flex-direction: row;
+        justify-content: space-between !important;
+        align-items: center !important;
+    }
+    .hp-cruise-subboxes{
+        flex-direction: column;
+        text-align: center;
+        width: 32%;
+        gap: 5px;
+    }
+    .homepage-midbanner-colone{
+        display: none !important;
+    }
+    .homepage-mid-banner{
+        padding: 15px;
+    }
+    .homepage-mid-banner h3, .homepage-mid-banner a{
+         text-align: center;
+         width: 100%;
+    }
+    .homepage-car-rental-content{
+        width: 60%;
+    }
+    .homepage-midbanner-content span{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hp_cruise-main-image{
+        height: 300px !important;
+    }
+    .homepage-car-rental-content{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hp-cruise-boxes{
+        display: none !important;
+    }
+    .homepage-banner-row{
+        padding: 0px 10px 10px 10px;
+    }
+    .homepage-banner-heading{
+        display: none;
+     }
+     .homepage-car-rental-content{
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        padding: 15px 10px;
+        top: 0px;
+        bottom: 0px;
+        left: 10px;
+        right: 10px;
+        width: 93%;
+     }
+}
+
+@media screen and (max-width: 413px) {
+    .homepage-banner-search-engine{
+        padding: 0px !important;
+    }
+    .search-engine .nav-pills{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .se-li{
+        width: 30% !important;
+    }
+    .se-li-btn img{
+        height: 30px;
+    }
+    .search-engine .nav-tabs .nav-link{
+        font-size: 12px;
+        padding: 7px 10px !important;
+    }
+    .search-engine-flightcontainer-nav-tab{
+        padding-left: 10px !important;
+        gap: 5px !important;
+    }
+    .se-input-box input::placeholder, .main-box-date-placeholder, .disabledbox>input::placeholder{
+        font-size: 12px;
+    }
+    .homepage-common-row{
+        padding: 15px 0px;
+    }
+    .homepage-exclusive-offer-col .nav-link{
+        width: 32%;
+        padding: 5px 10px;
+        font-size: 11px !important;
+    }
+    .homepage_exclusive-offer_box-col, .homepage_airlinep-col{
+        padding: 0px !important;
+    }
+    .homepage-hotel-col, .homepage-tblog-col{
+        width: 100% !important;
+    }
+    .homepage-midbanner-content a, .homepage-car-rental-content p{
+        font-size: 15px;
+    }
 }

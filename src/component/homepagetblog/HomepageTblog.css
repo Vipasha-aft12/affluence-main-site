@@ -1,0 +1,29 @@
+.homepage-tblog-box{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    gap: 5px;
+    padding: 7px;
+}
+.homepage-tblog-box-top{
+    gap: 5px;
+    margin: 5px 0px;
+}
+.homepage-tblog-box-top p{
+    background: #f50122;
+    color: white;
+    font-size: 11px !important;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+.homepage-tblog-box p{
+    font-size: 15px;
+}
+.homepage-tblog-box a{
+    color: black;
+    font-size: 13px;
+}
+@media screen and (max-width: 992px) {
+    .homepage-tblog-box p{
+        font-size: 14px;
+    }
+}

@@ -6,16 +6,16 @@ import './HomepageHotel.css';
 
 const HomepageHotel = () => {
     return (
-        <div className='col-3 homepage-hotel-col'>
+        <div className='col-lg-3 col-6 homepage-hotel-col'>
             <div className='homepage-hotel-box w-100 cent fd-col'>
-                <div className='homepage-hotel-box w-100 start fd-col'>
+                <div className='homepage-hotel-box-image w-100 start fd-col'>
                     <Image
                         src='/images/homepage/hp-hotel.webp'
                         className='img-fluid homepage-hotel'
                         width={626}
                         height={542}
                         alt='Homepage hotel' />
-                    <p>Up to 20% off</p>
+                    <p className='homepage-hotel-box-image-discount'>Up to 20% off</p>
                 </div>
                 <div className='homepage-hotel-box-content w-100 start fd-col'>
                     <p><strong>The Crown Plaza</strong></p>

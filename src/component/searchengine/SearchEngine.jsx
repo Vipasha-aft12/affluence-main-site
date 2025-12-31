@@ -10,7 +10,7 @@ import SearchEnginePackage from './SearchEnginePackage';
 import SearchEngineActivity from './SearchEngineActivity';
 
 
-const SearchEngine = () => {
+const SearchEngine = () => { 
     return (
         <div className='search-engine cent fd-col w-100'>
             <ul className="nav nav-pills mb-3 se-ul cent fd-row" id="pills-tab" role="tablist">

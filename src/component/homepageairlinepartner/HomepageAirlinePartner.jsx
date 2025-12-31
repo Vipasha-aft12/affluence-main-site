@@ -52,19 +52,21 @@ const airlineData = [
 
 const HomepageAirlinePartner = () => {
     return (
-        <div className="row homepage_airlinep-row start">
+        <div className="row homepage_airlinep-row start common-gap">
             {airlineData.map((item, index) => (
-                <div className="col-4 homepage_airlinep-col start fd-row" key={index}>
-                    <Image
-                        src={item.img}
-                        width={86}
-                        height={84}
-                        alt={item.title}
-                        className="hp-airlinepartners-img" />
+                <div className="col-lg-4 col-md-6 homepage_airlinep-col" key={index}>
+                    <div className='homepage_airlinep-col-box btwn fd-row w-100'>
+                        <Image
+                            src={item.img}
+                            width={86}
+                            height={84}
+                            alt={item.title}
+                            className="hp-airlinepartners-img" />
 
-                    <div className="homepage_airlinep-info start fd-col">
-                        <h3>{item.title}</h3>
-                        <p>{item.desc}</p>
+                        <div className="homepage_airlinep-info start fd-col">
+                            <h5><strong>{item.title}</strong></h5>
+                            <p>{item.desc}</p>
+                        </div>
                     </div>
                 </div>
             ))}

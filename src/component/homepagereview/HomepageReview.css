@@ -1,0 +1,37 @@
+.homepage-review-box{
+    background: white;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.homepage-review-box-top{
+    align-items: start !important;
+}
+.homepage-review-box-topone p{
+    font-size: 15px;
+}
+.homepage-review-box-top span{
+    font-size: 12px;
+    font-weight: 500;
+    color: gray;
+}
+.homepage-review-box-toptwo{
+    gap: 3px;
+}
+.homepage-review-box-toptwo img{
+    height: 25px;
+    width: auto;
+}
+.homepage-review-box-topbottom p{
+    font-size: 15px;
+}
+.homepage-review-box-topbottom{
+    gap: 7px;
+}
+
+@media screen and (max-width: 992px) {
+    .homepage-review-box-topone p, .homepage-review-box-topbottom p{
+        font-size: 14px;
+    }
+}
