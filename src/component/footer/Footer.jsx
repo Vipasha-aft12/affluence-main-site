@@ -12,8 +12,8 @@ const Footer = () => {
         <footer className="footer">
             <section className="footer-top">
                 <div className="container footer-top-container">
-                    <div className="row footer-top-row">
-                        <div className="col-3 footer-top-col footer-top-col-about">
+                    <div className="row footer-top-row start common-gap">
+                        <div className="col-lg-3 footer-top-col footer-top-col-about">
                             <Image
                                 src='/images/header/affluence-logo.png'
                                 className='img-fluid header-logo'
@@ -22,7 +22,7 @@ const Footer = () => {
                                 alt='header logo' />
                             <p>Affluence Travel is your ultimate travel companion, offering seamless solutions for flights, hotels, and vacation packages. With 24/7 support and unbeatable deals, we make travel stress-free and affordable. Discover the world your way with Affluence Travel!</p>
                         </div>
-                        <div className="col-2 footer-top-col footer-top-col-links start fd-col">
+                        <div className="col-lg-2 col-md-3 col-4 footer-top-col footer-top-col-links start fd-col">
                             <p><strong>Quick Links</strong></p>
                             <Link href="/">Home</Link>
                             <Link href="/">Blogs</Link>
@@ -31,7 +31,7 @@ const Footer = () => {
                             <Link href="/">Customer Support</Link>
 
                         </div>
-                        <div className="col-2 footer-top-col footer-top-col-links start fd-col">
+                        <div className="col-lg-2 col-md-3 col-4 footer-top-col footer-top-col-links start fd-col">
                             <p><strong>Policies</strong></p>
                             <Link href="/">Cookies Policy</Link>
                             <Link href="/">Cancellation Policy</Link>
@@ -39,7 +39,7 @@ const Footer = () => {
                             <Link href="/">Refund Policy</Link>
                             <Link href="/">Terms &amp; Conditions</Link>
                         </div>
-                        <div className="col-2 footer-top-col footer-top-col-links start fd-col">
+                        <div className="col-md-2 col-4 footer-top-col footer-top-col-links start fd-col">
                             <p><strong>Our Links</strong></p>
                             <Link href="/">Cruise</Link>
                             <Link href="/">Destinations</Link>
@@ -48,7 +48,7 @@ const Footer = () => {
                             <Link href="/">Packages</Link>
 
                         </div>
-                        <div className="col-3 footer-top-col footer-top-col-contact start fd-col">
+                        <div className="col-lg-3 col-md-4 footer-top-col footer-top-col-contact start fd-col">
                             <div className="footer-top-col-contact-box start fd-row">
                                 <Image
                                 src='/images/footer/address.png'
@@ -74,7 +74,7 @@ const Footer = () => {
                                 width={120}
                                 height={120}
                                 alt='footer contact' />
-                                <a href="mailto:support@affluencetravels.com">support@affluencetravels.com"</a>
+                                <a href="mailto:support@affluencetravels.com">support@affluencetravels.com</a>
                             </div>
                         </div>
                     </div>
@@ -95,9 +95,7 @@ const Footer = () => {
                     <div className="row footer-bottom-row">
                         <div className="col-12 footer-bottom-col btwn fd-row">
                             <p>&copy; 2024 AffluenceTravels All Rights Reserved.</p>
-                        </div>
-
-                        <div className="footer-social_media cent fd-row">
+                            <div className="footer-social_media cent fd-row">
                             <Link href="/">
                                 <Image
                                     src='/images/footer/facebook.png'
@@ -131,6 +129,7 @@ const Footer = () => {
                                     alt='footer-social' />
                             </Link>
 
+                        </div>
                         </div>
                     </div>
                 </div>
