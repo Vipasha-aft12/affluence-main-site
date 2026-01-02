@@ -15,7 +15,8 @@ const Header = () => {
               width={420}
               height={140}
               alt="header image" />
-            <div className='header-call cent fd-row'>
+            <a href="tel:+1-000-000-0000">
+              <div className='header-call cent fd-row'>
               <div className='header-call-image'>
                 <Image
                 src='/images/header/cust-care.webp'
@@ -41,6 +42,7 @@ const Header = () => {
                 alt="header image" />
               <a href="tel:+1-000-000-0000"><strong>+1-000-000-0000</strong></a>
             </div>
+            </a>
             <div className='header-col-nav cent fd-row'>
               <Link href="/">Deals</Link>
               <Link href="/">Group Booking</Link>
