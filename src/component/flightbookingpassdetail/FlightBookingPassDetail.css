@@ -1,0 +1,77 @@
+.fbooking-pdetail-colone{
+    background: #0e3d6f;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 15px;
+}
+.fbooking-pdetail-colone{
+    gap: 10px;
+    align-items: center !important;
+}
+.fbooking-pdetail-colone h4{
+    color: white;
+}
+.fbooking-pdetail-colone img{
+    height: 30px;
+    width: auto;
+}
+.fbookingpdetail{
+    gap: 10px;
+}
+.flightbokingpdetail-pare{
+    background: #396BCA;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+.fbookingpdetail-subrow{
+    border-radius: 10px;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+     padding: 15px 10px;
+}
+.fbookingpdetail-subrow-col-content p{
+    font-size: 15px;
+    color: gray;
+}
+.fbookingpdetail-subrow-col{
+    gap: 10px;
+    align-items: center !important;
+}
+.fbookingpdetail-subrow-col-content strong{
+    color: black;
+    font-size: 17px;
+}
+.fbookingpdetail-subrow-col img{
+    height: 25px;
+    width: auto;
+}
+
+@media screen and (max-width: 992px) {
+    .flightbokingpdetail-pare, .fbookingpdetail-subrow-col-content strong{
+        font-size: 14px;
+    }
+    .fbookingpdetail-subrow-col-content p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fbookingpdetail{
+        flex-direction: column !important;
+        align-items: flex-start !important;
+    }
+    .fbookingpdetail-subrow{
+        padding: 10px;
+        gap: 10px 0px;
+    }
+}
+@media screen and (max-width: 413px) {
+     .fbookingpdetail-subrow-col{
+        width: 100%;
+    }
+    .fbookingpdetail-subrow-col img{
+        height: 20px;
+    }
+}

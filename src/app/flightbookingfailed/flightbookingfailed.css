@@ -1,0 +1,157 @@
+.flightbooking-failed{
+    padding: 25px 0px;
+    background: #f3f5fa;
+}
+.flightbookingpage-container .row{
+    margin: auto;
+}
+.flight-booking-commonrow{
+    background: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.flightbookingpage-btypecol{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 10px;
+}
+.flightbookingpage-btypecol img{
+    height: 100px;
+    width: auto;
+}
+.flightbookingpage-btypecol h3{
+    font-weight: 700;
+}
+ .flightbooking-failed .flightbookingpage-btypecol p{
+    color: #f50122;
+    font-size: 20px;
+    font-weight: 500;
+}
+.flightbookingpage-btypecol-box{
+    gap: 20px;
+}
+.flightbookingpage-btypecol-subbox{
+    border-radius: 5px;
+    background: #eeeeee;
+    padding: 5px 10px;
+}
+.flightbookingpage-btypecol-subbox p{
+    font-size: 15px !important;
+    color: black !important;
+}
+.flight-booking-paysummary{
+    gap: 10px 0px;
+    gap: 15px 0px;
+    padding-bottom: 10px;
+}
+.flight-booking-paysummary-heading{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: #0e3d6f;
+    gap: 5px;
+    color: white;
+    padding:10px 15px;
+}
+.flight-booking-paysummary-coltwo img{
+    height: 100px;
+    width: auto;
+}
+.flight-booking-paysummary-colone-tablebody{
+    gap: 10px 0px;
+    padding: 15px 0px;
+}
+.flight-booking-paysummary-colone-tablebody tr{
+    border-bottom: 1px solid lightgray;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.flight-booking-paysummary-colone-tablebody td{
+    font-size: 16px;
+}
+.flight-booking-paysummary-colone-tablebody span{
+    font-size: 18px;
+    color: #f50122;
+    font-weight: 700;
+}
+.no-border{
+    border: none !important;
+}
+.flightbooking-confirmed-button-colthree{
+    background: #0e3d6f;
+    border-radius: 10px;
+    color: white;
+    padding: 20px 10px;
+}
+.flightbooking-confirmed-button-colthree p{
+font-size: 16px;
+}
+.flightbooking-confirmed-button-colone-box, .flightbooking-confirmed-button-colone-box:hover{
+    background: #396BCA !important;
+    color: white !important;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px !important;
+}
+.flightbooking-confirmed-button-coltwo-box, .flightbooking-confirmed-button-coltwo-box:hover{
+    border: 2px solid #396BCA !important;
+    background: white !important;
+    font-size: 15px;
+    color: #0e3d6f !important;
+    font-weight: 500;
+    border-radius: 5px !important;
+}
+.flightbooking-confirmed-button-colone-box, .flightbooking-confirmed-button-colone-box:hover, .flightbooking-confirmed-button-coltwo-box, .flightbooking-confirmed-button-coltwo-box:hover{
+    height: 50px;
+}
+
+.flight-failed-booking-btn-one, .flight-failed-booking-btn-one:hover{
+    background: rgb(255, 196, 0) !important;
+    color: white !important;
+    font-size: 14px;
+    font-weight: 500;
+}
+.flight-failed-booking-btn-two, .flight-failed-booking-btn-two:hover{
+    background: #0e3d6f;
+    color: white !important;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 992px) {
+    .flightbooking-failed .flightbookingpage-btypecol p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .flightbookingpage-btypecol-subbox p, .flightbooking-confirmed-button-coltwo-box, .flightbooking-confirmed-button-coltwo-box:hover,.flightbooking-confirmed-button-colone-box, .flightbooking-confirmed-button-colone-box:hover,.fbooking-fdetail-colthree-box p, .flight-booking-paysummary-colone-tablebody td, .flightbooking-confirmed-button-colthree p{
+        font-size: 14px !important;
+    }
+    .flight-booking-paysummary-coltwo img{
+        height: 50px;
+    }
+    .flight-booking-paysummary{
+        align-items: center !important;
+    }
+    .flightbooking-confirmed-button-colone-box, .flightbooking-confirmed-button-colone-box:hover, .flightbooking-confirmed-button-coltwo-box, .flightbooking-confirmed-button-coltwo-box:hover{
+        height: 40px;
+    }
+    
+}
+@media screen and (max-width: 413px) {
+    .flightbookingpage-btypecol-box{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .flightbooking-confirmed .flightbookingpage-btypecol p, .flightbooking-confirmed-button-colthree-box{
+        text-align: center;
+    }
+    .flight-booking-paysummary-coltwo img{
+    height: 30px;
+}
+.flightbooking-confirmed-button-colone, .flightbooking-confirmed-button-coltwo{
+    width: 100%;
+}
+.flightbooking-confirmed-button-rows{
+    gap: 10px !important;
+}
+}
+
