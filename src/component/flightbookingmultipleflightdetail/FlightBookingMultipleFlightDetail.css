@@ -1,0 +1,42 @@
+.flight-booking-policy-coltwo{
+    gap: 10px;
+}
+.flight-booking-policy-coltwo img{
+    height: 60px;
+    width: auto;
+}
+.flight-booking-airline p, .flight-booking-policy-colthree p, .flight-booking-policy-colfour p{
+    color: gray;
+    font-size: 14px;
+    font-weight: 500;
+}
+.flight-booking-airline strong, .flight-booking-policy-colthree strong, .flight-booking-policy-colfour strong{
+    color: black;
+    font-size: 16px;
+}
+.flight-booking-policy-colfour span{
+     display: inline-block;
+    width: 50px;
+    margin: 0px 10px 3px 10px;
+    height: 2px;
+    background: #396bca;
+}
+
+.fbooking-multi-flight{
+    border-top: 1px dashed lightgray;
+}
+
+@media screen and (max-width: 767px) {
+    .flight-booking-airline strong, .flight-booking-policy-colthree strong, .flight-booking-policy-colfour strong{
+        font-size: 14px;
+    }
+    .flight-booking-airline p, .flight-booking-policy-colthree p, .flight-booking-policy-colfour p, .flight-booking-commonbox-heading-bottom, .flight-booking-commonbox-heading-bottom a{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .flight-booking-policy-coltwo img{
+    height: 40px !important;
+}
+}

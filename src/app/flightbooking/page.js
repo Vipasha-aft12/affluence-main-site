@@ -11,6 +11,7 @@ import FlightBookingFlightDetail from '@/component/flightbookingflightdetail/Fli
 import FlightBookingTravelProtection from '@/component/flightbookingtravelprotection/FlightBookingTravelProtection';
 import FlightBookingContactDetail from '@/component/flightbookingcontactdetail/FlightBookingContactDetail';
 import FlightBookingTravelerForm from '@/component/flightbookingtravelerform/FlightBookingTravelerForm';
+import FlightBookingMultipleFlightDetail from '@/component/flightbookingmultipleflightdetail/FlightBookingMultipleFlightDetail';
 
 
 
@@ -21,7 +22,7 @@ const FlightBooking = () => {
                 <div className='row flight-booking-row start common-gap'>
                     <div className='col-lg-8 flight-booking-colone start fd-col common-gap'>
                         <FlightBookingFlightDetail />
-                        <FlightBookingFlightDetail />
+                        <FlightBookingMultipleFlightDetail />
                         <FlightBookingBaggage />
                         <FlightBookingTravelProtection />
                         <FlightBookingContactDetail />
