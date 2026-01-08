@@ -1,4 +1,8 @@
 /*-----------------common--------------*/
+.form-control:focus{
+    border-color: none !important;
+    box-shadow: none !important;
+}
 .start {
     display: flex;
     justify-content: start;

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from 'react'
 import './FlightBookingTravelerForm.css'
+import DobInput from "../dobinput/DobInput";
 
 const FlightBookingTravelerForm = () => {
 
@@ -20,8 +21,7 @@ const FlightBookingTravelerForm = () => {
             </div>
 
             <div className="col-sm-6 flight-booking-contact-detail-col start fd-col">
-                <label>Date of Birth</label>
-                <input className="form-control" placeholder="Date of Birth" />
+                <DobInput />
             </div>
 
             <div className="col-sm-6 flight-booking-contact-detail-col start fd-col">
