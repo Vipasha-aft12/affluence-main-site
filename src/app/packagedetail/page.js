@@ -10,6 +10,7 @@ import PkgDetailOverview from '@/component/pkgdetailoverview/PkgDetailOverview';
 import PkgDetailHighlight from '@/component/pkgdetailhighlight/PkgDetailHighlight';
 import PkgDetailInclusionExclusion from '@/component/pkgdetailinclusionexclusion/PkgDetailInclusionExclusion';
 import PkgDetailItinary from '@/component/pkgdetailitinary/PkgDetailItinary';
+import PackagePopupModal from '@/component/packagepopupmodal/PackagePopupModal';
 
 
 
@@ -25,7 +26,7 @@ const PackageDetail = () => {
                 <h1>Your Dream Vacations Starts Here</h1>
                 <p>Hotels, Flights and Car Rentals - All in One Package</p>
               </div>
-              <div className="col-12 pkg-holidaylisting-col cent">
+              <div className="col-12 pkg-holidaylisting-col cent fd-col">
                 <div className="row pkg-holidaylisting-col-box btwn fd-row w-100">
                   <div className="col-lg-3 col-md-4 pkg-holidaylisting-col-box-input-col start fd-col">
                     <label>Destination</label>
@@ -78,6 +79,7 @@ const PackageDetail = () => {
                     <button className="btn pkg-holidaylisting-col-btn w-100 cent">Search</button>
                   </div>
                 </div>
+                <PackagePopupModal />
               </div>
             </div>
           </div>

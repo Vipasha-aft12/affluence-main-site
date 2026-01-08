@@ -1,0 +1,42 @@
+.pkg-popup-modal{
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+    .pkg-popup-modal{
+        display: flex;
+    }
+    .pkg-popup-modal .modal-header{
+        border-bottom: 0px;
+    }
+    .pkg-popup-modalbody{
+        gap: 10px;
+        text-align: center;
+    }
+    .pkg-popup-image img{
+        height: 40px;
+        width: auto;
+    }
+    .pkg-popup-image{
+        border-radius: 10px;
+        background: #396BCA;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+    .pkg-popup-modalbody strong{
+        font-size: 25px;
+    }
+    .pkg-popup-modalbody p{
+        font-size: 14px
+    }
+    .pkg-popup-modalbody a{
+        width: 100%;
+        background: #396BCA;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+}
