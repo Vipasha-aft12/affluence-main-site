@@ -1,0 +1,56 @@
+.loading-area {
+    padding: 100px 0px;
+}
+.loading-area .row{
+    margin: auto;
+}
+.loading-area-col strong {
+    color: black;
+    font-size: 25px;
+}
+
+.loading-area-col p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #396BCA;
+}
+
+.loading-area-col {
+    gap: 10px;
+    text-align: center;
+}
+
+@keyframes floatUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.floating-image {
+    animation: floatUpDown 2s ease-in-out infinite;
+    height: 100px;
+    width: auto;
+}
+
+@media screen and (max-width: 576px) {
+    .loading-area {
+        padding: 50px 0px;
+    }
+    .floating-image{
+        height: 60px;
+    }
+    .loading-area-col strong{
+        font-size: 18px;
+    }
+    .loading-area-col p{
+        font-size: 14px;
+    }
+}
