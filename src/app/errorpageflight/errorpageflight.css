@@ -1,0 +1,58 @@
+.error-page {
+    padding: 50px 0px;
+}
+
+.error-page-colone img {
+    height: 300px;
+    width: auto;
+}
+
+.error-page-coltwo {
+    gap: 10px;
+}
+
+.error-page-coltwo h4 {
+    font-weight: 700;
+}
+
+.error-page-coltwo p {
+    font-size: 15px;
+}
+
+.error-page-coltwo strong {
+    font-size: 17px;
+    color: #396bca;
+}
+
+.error-page-btn,
+.error-page-btn:hover {
+    color: white !important;
+    font-size: 15px !important;
+    border-radius: 50px !important;
+    margin-top: 10px;
+}
+
+.error-page-btn {
+    background: #396bca !important;
+}
+
+.error-page-btn:hover {
+    background: #001123 !important;
+}
+
+@media screen and (max-width: 767px) {
+
+    .error-page-coltwo p,
+    .error-page-btn,
+    .error-page-btn:hover {
+        font-size: 14px !important;
+    }
+
+    .error-page-coltwo strong {
+        font-size: 15px;
+    }
+
+    .error-page-colone img {
+        height: 200px;
+    }
+}
